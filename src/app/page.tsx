@@ -60,7 +60,7 @@ export default function Home() {
             <div className="flex-shrink-0 relative group h-60 w-60 sm:h-80 sm:w-80 md:h-96 md:w-96">
               <div className="w-70 absolute -inset-1 bg-[#FFECE3] rounded-2xl hidden sm:block"></div>
               <img
-                src="avatar.png"
+                src="Avatar.png"
                 alt="Muhammad Aprilianto"
                 className="relative w-full h-full object-cover sm:-left-8 sm:top-10"
               />
