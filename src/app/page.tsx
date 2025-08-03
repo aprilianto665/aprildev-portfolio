@@ -1,103 +1,275 @@
-import Image from "next/image";
-
 export default function Home() {
   return (
-    <div className="font-sans grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20">
-      <main className="flex flex-col gap-[32px] row-start-2 items-center sm:items-start">
-        <Image
-          className="dark:invert"
-          src="/next.svg"
-          alt="Next.js logo"
-          width={180}
-          height={38}
-          priority
-        />
-        <ol className="font-mono list-inside list-decimal text-sm/6 text-center sm:text-left">
-          <li className="mb-2 tracking-[-.01em]">
-            Get started by editing{" "}
-            <code className="bg-black/[.05] dark:bg-white/[.06] font-mono font-semibold px-1 py-0.5 rounded">
-              src/app/page.tsx
-            </code>
-            .
-          </li>
-          <li className="tracking-[-.01em]">
-            Save and see your changes instantly.
-          </li>
-        </ol>
-
-        <div className="flex gap-4 items-center flex-col sm:flex-row">
-          <a
-            className="rounded-full border border-solid border-transparent transition-colors flex items-center justify-center bg-foreground text-background gap-2 hover:bg-[#383838] dark:hover:bg-[#ccc] font-medium text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 sm:w-auto"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className="dark:invert"
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={20}
-              height={20}
-            />
-            Deploy now
-          </a>
-          <a
-            className="rounded-full border border-solid border-black/[.08] dark:border-white/[.145] transition-colors flex items-center justify-center hover:bg-[#f2f2f2] dark:hover:bg-[#1a1a1a] hover:border-transparent font-medium text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 w-full sm:w-auto md:w-[158px]"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Read our docs
-          </a>
+    <div
+      className="min-h-screen relative overflow-hidden"
+      style={{
+        backgroundImage: `
+        linear-gradient(rgba(251, 146, 60, 0.1) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(251, 146, 60, 0.1) 1px, transparent 1px)
+      `,
+        backgroundSize: "30px 30px",
+        backgroundColor: "#FFECE3",
+      }}
+    >
+      {/* Navbar */}
+      <nav className="fixed top-0 left-0 right-0 z-50 bg-white/80 backdrop-blur-md border-b border-orange-100">
+        <div className="max-w-6xl mx-auto px-8 py-4">
+          <div className="flex items-center justify-between">
+            <div className="text-xl font-bold text-gray-900">
+              April <span className="text-orange-500">Dev</span>
+            </div>
+            <div className="hidden md:flex space-x-8">
+              <a
+                href="#home"
+                className="text-gray-700 hover:text-orange-500 transition-colors"
+              >
+                About
+              </a>
+              <a
+                href="#about"
+                className="text-gray-700 hover:text-orange-500 transition-colors"
+              >
+                Skills
+              </a>
+              <a
+                href="#projects"
+                className="text-gray-700 hover:text-orange-500 transition-colors"
+              >
+                Projects
+              </a>
+              <a
+                href="#contact"
+                className="text-gray-700 hover:text-orange-500 transition-colors"
+              >
+                Contact
+              </a>
+            </div>
+          </div>
         </div>
-      </main>
-      <footer className="row-start-3 flex gap-[24px] flex-wrap items-center justify-center">
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/file.svg"
-            alt="File icon"
-            width={16}
-            height={16}
-          />
-          Learn
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/window.svg"
-            alt="Window icon"
-            width={16}
-            height={16}
-          />
-          Examples
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/globe.svg"
-            alt="Globe icon"
-            width={16}
-            height={16}
-          />
-          Go to nextjs.org →
-        </a>
-      </footer>
+      </nav>
+
+      {/* Main Content */}
+      <div className="flex items-center justify-center p-8 pt-24">
+        <div className="bg-white/90 backdrop-blur-sm rounded-3xl shadow-2xl p-10 max-w-6xl w-full border border-orange-100 hover:shadow-3xl transition-all duration-300">
+          <div className="flex flex-col md:flex-row items-center gap-10">
+            <div className="flex-shrink-0 relative group h-115 w-100">
+              <div className="w-70 absolute -inset-1 bg-[#FFECE3] rounded-2xl"></div>
+              <img
+                src="avatar.png"
+                alt="Muhammad Aprilianto"
+                className="relative md:w-100 md:h-100 object-cover -left-8 top-10"
+              />
+            </div>
+            <div className="flex-1 text-left space-y-6">
+              <div className="space-y-2">
+                <div className="inline-block px-4 py-2 bg-gradient-to-r from-orange-400 to-orange-500 text-white text-sm font-semibold rounded-full mb-4">
+                  Full Stack Developer
+                </div>
+                <h1 className="text-5xl md:text-6xl font-bold leading-tight">
+                  <span className="block bg-gradient-to-r from-gray-900 to-gray-700 bg-clip-text text-transparent">
+                    Muhammad
+                  </span>
+                  <span className="block bg-gradient-to-r from-orange-500 to-orange-600 bg-clip-text text-transparent">
+                    Aprilianto
+                  </span>
+                </h1>
+              </div>
+              <p className="text-lg leading-relaxed text-gray-600 font-medium">
+                Currently transitioning into web development with a strong
+                background in document control and administrative support in
+                large-scale infrastructure projects. Actively attending a Full
+                Stack Developer bootcamp at{" "}
+                <span className="text-orange-500 font-semibold">
+                  Harisenin.com
+                </span>{" "}
+                to build technical proficiency in modern web technologies.
+              </p>
+              <div className="flex flex-wrap gap-3 pt-4">
+                {["React.js", "Node.js", "Express.js"].map((tech) => (
+                  <span
+                    key={tech}
+                    className="px-3 py-1 bg-orange-50 text-orange-700 text-sm font-medium rounded-lg border border-3 border-orange-200"
+                  >
+                    {tech}
+                  </span>
+                ))}
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      {/* Skills Section */}
+      <div className="max-w-6xl mx-auto px-8 py-16">
+        <div className="text-center mb-12">
+          <h2 className="text-4xl font-bold text-gray-900 mb-4">
+            My <span className="text-orange-500">Skills</span>
+          </h2>
+          <p className="text-gray-600 text-lg max-w-2xl mx-auto">
+            Technologies and tools I work with to bring ideas to life
+          </p>
+        </div>
+
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+          {/* Frontend Skills */}
+          <div className="bg-white/90 backdrop-blur-sm rounded-2xl p-6 shadow-lg border border-orange-100 hover:shadow-xl transition-all duration-300">
+            <div className="w-8 h-8 mb-4">
+              <svg
+                viewBox="0 0 24 24"
+                fill="currentColor"
+                className="w-full h-full text-orange-500"
+              >
+                <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z" />
+              </svg>
+            </div>
+            <h3 className="text-xl font-semibold text-gray-900 mb-4">
+              Frontend
+            </h3>
+            <div className="space-y-3">
+              {[
+                "HTML",
+                "CSS",
+                "JavaScript",
+                "TypeScript",
+                "React.js",
+                "Tailwind CSS",
+              ].map((skill) => (
+                <div key={skill} className="flex items-center space-x-3">
+                  <div className="w-2 h-2 bg-orange-500 rounded-full"></div>
+                  <span className="text-gray-700">{skill}</span>
+                </div>
+              ))}
+            </div>
+          </div>
+
+          {/* Backend Skills */}
+          <div className="bg-white/90 backdrop-blur-sm rounded-2xl p-6 shadow-lg border border-orange-100 hover:shadow-xl transition-all duration-300">
+            <div className="w-8 h-8 mb-4">
+              <svg
+                viewBox="0 0 24 24"
+                fill="currentColor"
+                className="w-full h-full text-orange-500"
+              >
+                <path d="M12,15.5A3.5,3.5 0 0,1 8.5,12A3.5,3.5 0 0,1 12,8.5A3.5,3.5 0 0,1 15.5,12A3.5,3.5 0 0,1 12,15.5M19.43,12.97C19.47,12.65 19.5,12.33 19.5,12C19.5,11.67 19.47,11.34 19.43,11L21.54,9.37C21.73,9.22 21.78,8.95 21.66,8.73L19.66,5.27C19.54,5.05 19.27,4.96 19.05,5.05L16.56,6.05C16.04,5.66 15.5,5.32 14.87,5.07L14.5,2.42C14.46,2.18 14.25,2 14,2H10C9.75,2 9.54,2.18 9.5,2.42L9.13,5.07C8.5,5.32 7.96,5.66 7.44,6.05L4.95,5.05C4.73,4.96 4.46,5.05 4.34,5.27L2.34,8.73C2.22,8.95 2.27,9.22 2.46,9.37L4.57,11C4.53,11.34 4.5,11.67 4.5,12C4.5,12.33 4.53,12.65 4.57,12.97L2.46,14.63C2.27,14.78 2.22,15.05 2.34,15.27L4.34,18.73C4.46,18.95 4.73,19.03 4.95,18.95L7.44,17.94C7.96,18.34 8.5,18.68 9.13,18.93L9.5,21.58C9.54,21.82 9.75,22 10,22H14C14.25,22 14.46,21.82 14.5,21.58L14.87,18.93C15.5,18.68 16.04,18.34 16.56,17.94L19.05,18.95C19.27,19.03 19.54,18.95 19.66,18.73L21.66,15.27C21.78,15.05 21.73,14.78 21.54,14.63L19.43,12.97Z" />
+              </svg>
+            </div>
+            <h3 className="text-xl font-semibold text-gray-900 mb-4">
+              Backend
+            </h3>
+            <div className="space-y-3">
+              {["Java", "Node.js", "Express.js", "MongoDB", "MySQL"].map(
+                (skill) => (
+                  <div key={skill} className="flex items-center space-x-3">
+                    <div className="w-2 h-2 bg-orange-500 rounded-full"></div>
+                    <span className="text-gray-700">{skill}</span>
+                  </div>
+                )
+              )}
+            </div>
+          </div>
+
+          {/* Tools & Others */}
+          <div className="bg-white/90 backdrop-blur-sm rounded-2xl p-6 shadow-lg border border-orange-100 hover:shadow-xl transition-all duration-300">
+            <div className="w-8 h-8 mb-4">
+              <svg
+                viewBox="0 0 24 24"
+                fill="currentColor"
+                className="w-full h-full text-orange-500"
+              >
+                <path d="M22.7 19l-9.1-9.1c.9-2.3.4-5-1.5-6.9-2-2-5-2.4-7.4-1.3L9 6 6 9 1.6 4.7C.4 7.1.9 10.1 2.9 12.1c1.9 1.9 4.6 2.4 6.9 1.5l9.1 9.1c.4.4 1 .4 1.4 0l2.3-2.3c.5-.4.5-1.1.1-1.4z" />
+              </svg>
+            </div>
+            <h3 className="text-xl font-semibold text-gray-900 mb-4">
+              Tools & Others
+            </h3>
+            <div className="space-y-3">
+              {[
+                "Git",
+                "Amazon Web Services",
+                "Microsoft Azure",
+                "Postman",
+                "Jest",
+              ].map((skill) => (
+                <div key={skill} className="flex items-center space-x-3">
+                  <div className="w-2 h-2 bg-orange-500 rounded-full"></div>
+                  <span className="text-gray-700">{skill}</span>
+                </div>
+              ))}
+            </div>
+          </div>
+        </div>
+      </div>
+
+      {/* Projects Section */}
+      <div className="max-w-6xl mx-auto px-8 py-16">
+        <div className="text-center mb-12">
+          <h2 className="text-4xl font-bold text-gray-900 mb-4">
+            My <span className="text-orange-500">Projects</span>
+          </h2>
+          <p className="text-gray-600 text-lg max-w-2xl mx-auto">
+            Some of the projects I've worked on during my learning journey
+          </p>
+        </div>
+
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+          {[
+            {
+              title: "Movie API",
+              description:
+                "RESTful API for movie database with CRUD operations, user authentication, rating system, and advanced search functionality.",
+              tech: ["Node.js", "Express.js", "MongoDB"],
+            },
+            {
+              title: "URL Shortener API",
+              description:
+                "Backend service for URL shortening with analytics tracking, custom aliases, expiration dates, and click statistics.",
+              tech: ["Node.js", "Express.js", "Redis"],
+            },
+            {
+              title: "Email Provider API",
+              description:
+                "Email service API with template management, bulk sending, delivery tracking, and webhook notifications.",
+              tech: ["Node.js", "Express.js", "PostgreSQL"],
+            },
+          ].map((project, index) => (
+            <div
+              key={index}
+              className="bg-white/90 backdrop-blur-sm rounded-2xl p-6 shadow-lg border border-orange-100 hover:shadow-xl transition-all duration-300"
+            >
+              <h3 className="text-xl font-semibold text-gray-900 mb-3">
+                {project.title}
+              </h3>
+              <p className="text-gray-600 mb-4 text-sm leading-relaxed">
+                {project.description}
+              </p>
+              <div className="flex flex-wrap gap-2 mb-4">
+                {project.tech.map((tech) => (
+                  <span
+                    key={tech}
+                    className="px-2 py-1 bg-orange-50 text-orange-700 text-xs font-medium rounded-md border border-orange-200"
+                  >
+                    {tech}
+                  </span>
+                ))}
+              </div>
+              <div className="flex space-x-3">
+                <a
+                  href="#"
+                  className="text-orange-500 hover:text-orange-600 text-sm font-medium"
+                >
+                  Live Demo
+                </a>
+                <a
+                  href="#"
+                  className="text-gray-500 hover:text-gray-600 text-sm font-medium"
+                >
+                  GitHub
+                </a>
+              </div>
+            </div>
+          ))}
+        </div>
+      </div>
     </div>
   );
 }
