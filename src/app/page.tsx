@@ -20,13 +20,13 @@ export default function Home() {
             </div>
             <div className="hidden md:flex space-x-8">
               <a
-                href="#home"
+                href="#about"
                 className="text-gray-700 hover:text-orange-500 transition-colors"
               >
                 About
               </a>
               <a
-                href="#about"
+                href="#skills"
                 className="text-gray-700 hover:text-orange-500 transition-colors"
               >
                 Skills
@@ -49,23 +49,26 @@ export default function Home() {
       </nav>
 
       {/* Main Content */}
-      <div className="flex items-center justify-center p-8 pt-24">
-        <div className="bg-white/90 backdrop-blur-sm rounded-3xl shadow-2xl p-10 max-w-6xl w-full border border-orange-100 hover:shadow-3xl transition-all duration-300">
-          <div className="flex flex-col md:flex-row items-center gap-10">
-            <div className="flex-shrink-0 relative group h-115 w-100">
-              <div className="w-70 absolute -inset-1 bg-[#FFECE3] rounded-2xl"></div>
+      <div
+        id="about"
+        className="flex items-center justify-center px-4 sm:px-6 lg:px-8 pt-20 sm:pt-24"
+      >
+        <div className="bg-white/90 backdrop-blur-sm rounded-2xl sm:rounded-3xl shadow-2xl p-6 sm:p-8 lg:p-10 max-w-6xl w-full border border-orange-100 hover:shadow-3xl transition-all duration-300">
+          <div className="flex flex-col lg:flex-row items-center gap-6 sm:gap-8 lg:gap-10">
+            <div className="flex-shrink-0 relative group h-60 w-60 sm:h-80 sm:w-80 md:h-96 md:w-96">
+              <div className="w-70 absolute -inset-1 bg-[#FFECE3] rounded-2xl hidden sm:block"></div>
               <img
                 src="avatar.png"
                 alt="Muhammad Aprilianto"
-                className="relative md:w-100 md:h-100 object-cover -left-8 top-10"
+                className="relative w-full h-full object-cover sm:-left-8 sm:top-10"
               />
             </div>
-            <div className="flex-1 text-left space-y-6">
+            <div className="flex-1 text-center lg:text-left space-y-4 sm:space-y-6">
               <div className="space-y-2">
-                <div className="inline-block px-4 py-2 bg-gradient-to-r from-orange-400 to-orange-500 text-white text-sm font-semibold rounded-full mb-4">
+                <div className="inline-block px-3 sm:px-4 py-2 bg-gradient-to-r from-orange-400 to-orange-500 text-white text-xs sm:text-sm font-semibold rounded-full mb-3 sm:mb-4">
                   Full Stack Developer
                 </div>
-                <h1 className="text-5xl md:text-6xl font-bold leading-tight">
+                <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold leading-tight">
                   <span className="block bg-gradient-to-r from-gray-900 to-gray-700 bg-clip-text text-transparent">
                     Muhammad
                   </span>
@@ -74,7 +77,7 @@ export default function Home() {
                   </span>
                 </h1>
               </div>
-              <p className="text-lg leading-relaxed text-gray-600 font-medium">
+              <p className="text-sm sm:text-base lg:text-lg leading-relaxed text-gray-600 font-medium">
                 Currently transitioning into web development with a strong
                 background in document control and administrative support in
                 large-scale infrastructure projects. Actively attending a Full
@@ -84,11 +87,11 @@ export default function Home() {
                 </span>{" "}
                 to build technical proficiency in modern web technologies.
               </p>
-              <div className="flex flex-wrap gap-3 pt-4">
+              <div className="flex flex-wrap justify-center lg:justify-start gap-2 sm:gap-3 pt-4">
                 {["React.js", "Node.js", "Express.js"].map((tech) => (
                   <span
                     key={tech}
-                    className="px-3 py-1 bg-orange-50 text-orange-700 text-sm font-medium rounded-lg border border-3 border-orange-200"
+                    className="px-2 sm:px-3 py-1 bg-orange-50 text-orange-700 text-xs sm:text-sm font-medium rounded-lg border border-orange-200"
                   >
                     {tech}
                   </span>
@@ -100,7 +103,7 @@ export default function Home() {
       </div>
 
       {/* Skills Section */}
-      <div className="max-w-6xl mx-auto px-8 py-16">
+      <div id="skills" className="max-w-6xl mx-auto px-8 py-16">
         <div className="text-center mb-12">
           <h2 className="text-4xl font-bold text-gray-900 mb-4">
             My <span className="text-orange-500">Skills</span>
@@ -201,7 +204,7 @@ export default function Home() {
       </div>
 
       {/* Projects Section */}
-      <div className="max-w-6xl mx-auto px-8 py-16">
+      <div id="projects" className="max-w-6xl mx-auto px-8 py-16">
         <div className="text-center mb-12">
           <h2 className="text-4xl font-bold text-gray-900 mb-4">
             My <span className="text-orange-500">Projects</span>
@@ -246,7 +249,7 @@ export default function Home() {
                 {project.tech.map((tech) => (
                   <span
                     key={tech}
-                    className="px-2 py-1 bg-orange-50 text-orange-700 text-xs font-medium rounded-md border border-orange-200"
+                    className="px-2 py-1 bg-orange-50 text-orange-700 text-xs font-medium rounded-md border border-3 border-orange-200"
                   >
                     {tech}
                   </span>
@@ -268,6 +271,95 @@ export default function Home() {
               </div>
             </div>
           ))}
+        </div>
+      </div>
+
+      {/* Contact Section */}
+      <div id="contact" className="max-w-6xl mx-auto px-8 py-16">
+        <div className="text-center mb-12">
+          <h2 className="text-4xl font-bold text-gray-900 mb-4">
+            Get In <span className="text-orange-500">Touch</span>
+          </h2>
+          <p className="text-gray-600 text-lg max-w-2xl mx-auto">
+            Let's connect and discuss opportunities or collaborations
+          </p>
+        </div>
+
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+          {/* Email */}
+          <div className="bg-white/90 backdrop-blur-sm rounded-2xl p-6 shadow-lg border border-orange-100 hover:shadow-xl transition-all duration-300">
+            <div className="w-8 h-8 mb-4">
+              <svg
+                viewBox="0 0 24 24"
+                fill="currentColor"
+                className="w-full h-full text-orange-500"
+              >
+                <path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.89 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z" />
+              </svg>
+            </div>
+            <h3 className="text-xl font-semibold text-gray-900 mb-3">Email</h3>
+            <p className="text-gray-600 mb-4 text-sm">
+              Feel free to reach out for any inquiries
+            </p>
+            <a
+              href="mailto:aprilianto@example.com"
+              className="text-orange-500 hover:text-orange-600 font-medium"
+            >
+              aprilianto665@gmail.com
+            </a>
+          </div>
+
+          {/* LinkedIn */}
+          <div className="bg-white/90 backdrop-blur-sm rounded-2xl p-6 shadow-lg border border-orange-100 hover:shadow-xl transition-all duration-300">
+            <div className="w-8 h-8 mb-4">
+              <svg
+                viewBox="0 0 24 24"
+                fill="currentColor"
+                className="w-full h-full text-orange-500"
+              >
+                <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z" />
+              </svg>
+            </div>
+            <h3 className="text-xl font-semibold text-gray-900 mb-3">
+              LinkedIn
+            </h3>
+            <p className="text-gray-600 mb-4 text-sm">
+              Connect with me professionally
+            </p>
+            <a
+              href="https://www.linkedin.com/in/muhammad-aprilianto/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-orange-500 hover:text-orange-600 font-medium"
+            >
+              linkedin.com/in/muhammad-aprilianto
+            </a>
+          </div>
+
+          {/* GitHub */}
+          <div className="bg-white/90 backdrop-blur-sm rounded-2xl p-6 shadow-lg border border-orange-100 hover:shadow-xl transition-all duration-300">
+            <div className="w-8 h-8 mb-4">
+              <svg
+                viewBox="0 0 24 24"
+                fill="currentColor"
+                className="w-full h-full text-orange-500"
+              >
+                <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z" />
+              </svg>
+            </div>
+            <h3 className="text-xl font-semibold text-gray-900 mb-3">GitHub</h3>
+            <p className="text-gray-600 mb-4 text-sm">
+              Check out my code and projects
+            </p>
+            <a
+              href="https://github.com/aprilianto665"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-orange-500 hover:text-orange-600 font-medium"
+            >
+              github.com/aprilianto665
+            </a>
+          </div>
         </div>
       </div>
     </div>
