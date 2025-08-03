@@ -304,7 +304,7 @@ export default function Home() {
               Feel free to reach out for any inquiries
             </p>
             <a
-              href="mailto:aprilianto@example.com"
+              href="mailto:aprilianto665@gmail.com"
               className="text-orange-500 hover:text-orange-600 font-medium"
             >
               aprilianto665@gmail.com
