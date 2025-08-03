@@ -93,7 +93,7 @@ export default function Home() {
                 {["React.js", "Node.js", "Express.js"].map((tech) => (
                   <span
                     key={tech}
-                    className="px-2 sm:px-3 py-1 bg-orange-50 text-orange-700 text-xs sm:text-sm font-medium rounded-lg border border-orange-200"
+                    className="px-2 sm:px-3 py-1 bg-orange-50 text-orange-700 text-xs sm:text-sm font-medium rounded-lg border border-3 border-orange-200"
                   >
                     {tech}
                   </span>
