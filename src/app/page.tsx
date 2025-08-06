@@ -240,13 +240,13 @@ export default function Home() {
             {
               title: "Email Provider",
               description:
-                "●	A full-featured Gmail-like clone currently in development.",
+                "A full-featured Gmail-like clone currently in development.",
               tech: ["React.js", "Golang", "PostgreSQL"],
             },
           ].map((project, index) => (
             <div
               key={index}
-              className="bg-white/90 backdrop-blur-sm rounded-2xl p-6 shadow-lg border border-orange-100 hover:shadow-xl transition-all duration-300"
+              className="flex flex-col justify-between bg-white/90 backdrop-blur-sm rounded-2xl p-6 shadow-lg border border-orange-100 hover:shadow-xl transition-all duration-300"
             >
               <h3 className="text-xl font-semibold text-gray-900 mb-3">
                 {project.title}
