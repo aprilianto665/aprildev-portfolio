@@ -137,6 +137,7 @@ export default function Home() {
                 "JavaScript",
                 "TypeScript",
                 "React.js",
+                "Next.js",
                 "Tailwind CSS",
               ].map((skill) => (
                 <div key={skill} className="flex items-center space-x-3">
@@ -162,7 +163,7 @@ export default function Home() {
               Backend
             </h3>
             <div className="space-y-3">
-              {["Java", "Node.js", "Express.js", "MongoDB", "MySQL"].map(
+              {["Java", "Golang", "Node.js", "Express.js", "MongoDB", "MySQL", "PostgreSQL"].map(
                 (skill) => (
                   <div key={skill} className="flex items-center space-x-3">
                     <div className="w-2 h-2 bg-orange-500 rounded-full"></div>
