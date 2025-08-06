@@ -163,14 +163,20 @@ export default function Home() {
               Backend
             </h3>
             <div className="space-y-3">
-              {["Java", "Golang", "Node.js", "Express.js", "MongoDB", "MySQL", "PostgreSQL"].map(
-                (skill) => (
-                  <div key={skill} className="flex items-center space-x-3">
-                    <div className="w-2 h-2 bg-orange-500 rounded-full"></div>
-                    <span className="text-gray-700">{skill}</span>
-                  </div>
-                )
-              )}
+              {[
+                "Java",
+                "Golang",
+                "Node.js",
+                "Express.js",
+                "MongoDB",
+                "MySQL",
+                "PostgreSQL",
+              ].map((skill) => (
+                <div key={skill} className="flex items-center space-x-3">
+                  <div className="w-2 h-2 bg-orange-500 rounded-full"></div>
+                  <span className="text-gray-700">{skill}</span>
+                </div>
+              ))}
             </div>
           </div>
 
@@ -223,19 +229,19 @@ export default function Home() {
               title: "Movie API",
               description:
                 "RESTful API for movie database with CRUD operations, user authentication, rating system, and advanced search functionality.",
-              tech: ["Node.js", "Express.js", "MongoDB"],
+              tech: ["Node.js", "Express.js", "MySQL", "JWT", "Multer"],
             },
             {
               title: "URL Shortener API",
               description:
                 "Backend service for URL shortening with analytics tracking, custom aliases, expiration dates, and click statistics.",
-              tech: ["Node.js", "Express.js", "Redis"],
+              tech: ["Node.js", "Express.js", "TypeScript", "MySQL],
             },
             {
-              title: "Email Provider API",
+              title: "Email Provider",
               description:
-                "Email service API with template management, bulk sending, delivery tracking, and webhook notifications.",
-              tech: ["Node.js", "Express.js", "PostgreSQL"],
+                "●	A full-featured Gmail-like clone currently in development.",
+              tech: ["React.js", "Golang", "PostgreSQL"],
             },
           ].map((project, index) => (
             <div
