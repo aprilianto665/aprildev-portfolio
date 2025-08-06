@@ -235,7 +235,7 @@ export default function Home() {
               title: "URL Shortener API",
               description:
                 "Backend service for URL shortening with analytics tracking, custom aliases, expiration dates, and click statistics.",
-              tech: ["Node.js", "Express.js", "TypeScript", "MySQL],
+              tech: ["Node.js", "Express.js", "TypeScript", "MySQL"],
             },
             {
               title: "Email Provider",
