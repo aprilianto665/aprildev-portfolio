@@ -28,6 +28,12 @@ export default function Home() {
                 About
               </a>
               <a
+                href="#education"
+                className="text-gray-700 hover:text-orange-500 transition-colors"
+              >
+                Education
+              </a>
+              <a
                 href="#skills"
                 className="text-gray-700 hover:text-orange-500 transition-colors"
               >
@@ -98,6 +104,84 @@ export default function Home() {
                     {tech}
                   </span>
                 ))}
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      {/* Education Section */}
+      <div id="education" className="max-w-6xl mx-auto px-8 py-16">
+        <div className="text-center mb-12">
+          <h2 className="text-4xl font-bold text-gray-900 mb-4">
+            Education & <span className="text-orange-500">Training</span>
+          </h2>
+          <p className="text-gray-600 text-lg max-w-2xl mx-auto">
+            My academic background and professional development journey
+          </p>
+        </div>
+
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+          {/* University Education */}
+          <div className="bg-white/90 backdrop-blur-sm rounded-2xl p-6 shadow-lg border border-orange-100 hover:shadow-xl transition-all duration-300">
+            <div className="w-8 h-8 mb-4">
+              <svg
+                viewBox="0 0 24 24"
+                fill="currentColor"
+                className="w-full h-full text-orange-500"
+              >
+                <path d="M12 3L1 9l4 2.18v6L12 21l7-3.82v-6l2-1.09V17h2V9L12 3zm6.82 6L12 12.72 5.18 9 12 5.28 18.82 9zM17 15.99l-5 2.73-5-2.73v-3.72L12 15l5-2.73v3.72z" />
+              </svg>
+            </div>
+            <h3 className="text-xl font-semibold text-gray-900 mb-3">
+              Education Level
+            </h3>
+            <div className="space-y-2 mb-4">
+              <p className="text-orange-600 font-semibold">
+                Universitas Terbuka
+              </p>
+              <p className="text-gray-700">
+                Bachelor Degree of Information Systems
+              </p>
+              <p className="text-gray-600 text-sm">2024-2028 (Expected)</p>
+            </div>
+            <div className="inline-block px-3 py-1 bg-orange-50 text-orange-700 text-xs font-medium rounded-lg border border-orange-200">
+              GPA: 3.85/4.00
+            </div>
+          </div>
+
+          {/* Professional Training */}
+          <div className="bg-white/90 backdrop-blur-sm rounded-2xl p-6 shadow-lg border border-orange-100 hover:shadow-xl transition-all duration-300">
+            <div className="w-8 h-8 mb-4">
+              <svg
+                viewBox="0 0 24 24"
+                fill="currentColor"
+                className="w-full h-full text-orange-500"
+              >
+                <path d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm-5 14H7v-2h7v2zm3-4H7v-2h10v2zm0-4H7V7h10v2z" />
+              </svg>
+            </div>
+            <h3 className="text-xl font-semibold text-gray-900 mb-3">
+              Professional Training
+            </h3>
+            <div className="space-y-4">
+              <div className="border-l-2 border-orange-200 pl-4">
+                <p className="text-orange-600 font-semibold text-sm">
+                  Asah Led by Dicoding
+                </p>
+                <p className="text-gray-700 text-sm">
+                  Dicoding - Remotely, Indonesia
+                </p>
+                <p className="text-gray-600 text-xs">Aug, 2025 - Present</p>
+              </div>
+              <div className="border-l-2 border-orange-200 pl-4">
+                <p className="text-orange-600 font-semibold text-sm">
+                  Full Stack Developer Bootcamp
+                </p>
+                <p className="text-gray-700 text-sm">
+                  Harisenin.com - Remotely, Indonesia
+                </p>
+                <p className="text-gray-600 text-xs">Jun, 2025 - Present</p>
               </div>
             </div>
           </div>
