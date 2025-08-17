@@ -96,7 +96,7 @@ export default function Home() {
                 to build technical proficiency in modern web technologies.
               </p>
               <div className="flex flex-wrap justify-center lg:justify-start gap-2 sm:gap-3 pt-4">
-                {["React.js", "Node.js", "Express.js"].map((tech) => (
+                {["React.js", "Node.js", "Express.js", "Golang"].map((tech) => (
                   <span
                     key={tech}
                     className="px-2 sm:px-3 py-1 bg-orange-50 text-orange-700 text-xs sm:text-sm font-medium rounded-lg border border-3 border-orange-200"
