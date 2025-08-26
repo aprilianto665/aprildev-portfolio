@@ -312,20 +312,24 @@ export default function Home() {
             {
               title: "Movie API",
               description:
-                "RESTful API for movie database with CRUD operations, user authentication, rating system, and advanced search functionality.",
+                "RESTful API for movie database with CRUD operations, user authentication, and advanced search functionality.",
               tech: ["Node.js", "Express.js", "MySQL", "JWT", "Multer"],
+              github:
+                "https://github.com/aprilianto665/mission-advanced-backend",
             },
             {
-              title: "URL Shortener API",
+              title: "HSR Profile Tracker",
               description:
-                "Backend service for URL shortening with analytics tracking, custom aliases, expiration dates, and click statistics.",
-              tech: ["Node.js", "Express.js", "TypeScript", "MySQL"],
+                "A full-stack app for Honkai: Star Rail (HSR), a popular turn-based RPG. It integrates with real in-game data, featuring advanced algorithms for character stat calculations and a complex relics scoring system to optimize builds.",
+              tech: ["React.js", "Golang", "Redis"],
+              github: "https://github.com/aprilianto665/hsr-profile-tracker",
             },
             {
               title: "Email Provider",
               description:
-                "A full-featured Gmail-like clone currently in development.",
-              tech: ["React.js", "Golang", "PostgreSQL"],
+                "EmailProvider is a full-stack, self-hosted email service similar to Gmail, featuring frontend, backend and its SMTP server. It uses SMTP for sending, IMAP for receiving, and includes a working webmail interface.",
+              tech: ["React.js", "Golang"],
+              github: "https://github.com/meQlause/EmailProviderMonorepo",
             },
           ].map((project, index) => (
             <div
@@ -356,8 +360,9 @@ export default function Home() {
                   Live Demo
                 </a>
                 <a
-                  href="#"
+                  href={project.github}
                   className="text-gray-500 hover:text-gray-600 text-sm font-medium"
+                  target="_blank"
                 >
                   GitHub
                 </a>
