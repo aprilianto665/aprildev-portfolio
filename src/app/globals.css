@@ -8,3 +8,5 @@
   --color-foreground: var(--foreground);
   --font-mono: var(--font-space-mono);
 }
+
+html { scroll-behavior: smooth; }

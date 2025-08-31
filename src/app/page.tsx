@@ -1,4 +1,5 @@
-/* eslint-disable @next/next/no-img-element */
+import Image from "next/image";
+
 /* eslint-disable react/no-unescaped-entities */
 export default function Home() {
   return (
@@ -65,10 +66,11 @@ export default function Home() {
           <div className="flex flex-col lg:flex-row items-center gap-6 sm:gap-8 lg:gap-10">
             <div className="flex-shrink-0 relative group h-60 w-60 sm:h-80 sm:w-80 md:h-96 md:w-96">
               <div className="w-70 absolute -inset-1 bg-[#FFECE3] rounded-2xl hidden sm:block"></div>
-              <img
-                src="Avatar.png"
+              <Image
+                fill
+                src="/Avatar.png"
                 alt="Muhammad Aprilianto"
-                className="relative w-full h-full object-cover sm:-left-8 sm:top-10"
+                className="relative object-cover sm:-left-8 sm:top-10"
               />
             </div>
             <div className="flex-1 text-center lg:text-left space-y-4 sm:space-y-6">
