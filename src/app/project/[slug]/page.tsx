@@ -1,18 +1,19 @@
 import { notFound } from 'next/navigation';
-import Image from 'next/image';
 import Layout from '../../../components/templates/Layout';
 import Badge from '../../../components/atoms/Badge';
 import Button from '../../../components/atoms/Button';
+import ImageGalleryClient from '../../../components/organisms/ImageGalleryClient';
 import { projects } from '../../../data/projects';
 
 interface ProjectPageProps {
-  params: {
+  params: Promise<{
     slug: string;
-  };
+  }>;
 }
 
-export default function ProjectPage({ params }: ProjectPageProps) {
-  const project = projects.find(p => p.slug === params.slug);
+export default async function ProjectPage({ params }: ProjectPageProps) {
+  const { slug } = await params;
+  const project = projects.find(p => p.slug === slug);
 
   if (!project) {
     notFound();
@@ -36,15 +37,7 @@ export default function ProjectPage({ params }: ProjectPageProps) {
             ))}
           </div>
           
-          <div className="mb-8">
-            <Image
-              src={project.image}
-              alt={project.title}
-              width={800}
-              height={400}
-              className="w-full object-contain rounded-lg"
-            />
-          </div>
+          <ImageGalleryClient images={project.images} title={project.title} />
           
           <p className="text-gray-600 text-lg mb-8 leading-relaxed">
             {project.fullDescription}

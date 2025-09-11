@@ -7,7 +7,7 @@ export interface Project {
   features: string[];
   github: string;
   demo: string;
-  image: string;
+  images: string[];
 }
 
 export const projects: Project[] = [
@@ -26,7 +26,7 @@ export const projects: Project[] = [
     ],
     github: "https://github.com/username/movie-api",
     demo: "https://movie-api-demo.com",
-    image: "/test.png"
+    images: ["/images/movie-api-1.png", "/images/movie-api-2.png", "/images/movie-api-3.png"]
   },
   {
     title: "HSR Profile Tracker",
@@ -43,7 +43,7 @@ export const projects: Project[] = [
     ],
     github: "https://github.com/username/hsr-profile-tracker",
     demo: "https://hsr-tracker-demo.com",
-    image: "/test.png"
+    images: ["/test.png", "/test2.png"]
   },
   {
     title: "Email Provider",
@@ -60,6 +60,6 @@ export const projects: Project[] = [
     ],
     github: "https://github.com/username/email-provider",
     demo: "https://email-provider-demo.com",
-    image: "/test.png"
+    images: ["/images/email-provider-1.png", "/images/email-provider-2.png", "/images/email-provider-3.png"]
   }
 ];
