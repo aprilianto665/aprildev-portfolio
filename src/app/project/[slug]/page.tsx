@@ -1,6 +1,5 @@
 import { notFound } from 'next/navigation';
 import Layout from '../../../components/templates/Layout';
-import Badge from '../../../components/atoms/Badge';
 import Button from '../../../components/atoms/Button';
 import ImageGalleryClient from '../../../components/organisms/ImageGalleryClient';
 import { projects } from '../../../data/projects';
@@ -27,15 +26,9 @@ export default async function ProjectPage({ params }: ProjectPageProps) {
         </div>
         
         <div className="bg-white rounded-xl shadow-lg p-8">
-          <h1 className="text-4xl font-bold text-gray-900 mb-4">
+          <h1 className="text-4xl font-bold text-gray-900 mb-6">
             {project.title}
           </h1>
-          
-          <div className="flex flex-wrap gap-2 mb-6">
-            {project.tech.map((tech) => (
-              <Badge key={tech}>{tech}</Badge>
-            ))}
-          </div>
           
           <ImageGalleryClient images={project.images} title={project.title} />
           
@@ -52,6 +45,20 @@ export default async function ProjectPage({ params }: ProjectPageProps) {
                 <li key={index} className="flex items-start">
                   <span className="text-orange-500 mr-2">•</span>
                   <span className="text-gray-700">{feature}</span>
+                </li>
+              ))}
+            </ul>
+          </div>
+          
+          <div className="mb-8">
+            <h2 className="text-2xl font-semibold text-gray-900 mb-4">
+              Tech Stack
+            </h2>
+            <ul className="space-y-2">
+              {project.tech.map((tech, index) => (
+                <li key={index} className="flex items-start">
+                  <span className="text-orange-500 mr-2">•</span>
+                  <span className="text-gray-700">{tech}</span>
                 </li>
               ))}
             </ul>

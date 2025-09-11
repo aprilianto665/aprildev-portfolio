@@ -32,7 +32,7 @@ export const projects: Project[] = [
     title: "HSR Profile Tracker",
     slug: "hsr-profile-tracker",
     description: "A full-stack app for Honkai: Star Rail (HSR), a popular turn-based RPG. It integrates with real in-game data, featuring advanced algorithms for character stat calculations and a complex relics scoring system to optimize builds.",
-    tech: ["React.js", "Golang", "Redis"],
+    tech: ["React.js", "Golang", "Redis","Docker"],
     fullDescription: "A sophisticated tracking application for Honkai: Star Rail players. The app integrates with real game data to provide character statistics, build optimization, and relic scoring. Built with React.js frontend, Golang backend, and Redis for caching game data.",
     features: [
       "Real-time game data integration",
@@ -41,7 +41,7 @@ export const projects: Project[] = [
       "Build optimization algorithms",
       "Performance caching with Redis"
     ],
-    github: "https://github.com/username/hsr-profile-tracker",
+    github: "https://github.com/aprilianto665/hsr-profile-tracker",
     demo: "https://hsr-tracker-demo.com",
     images: ["/test.png", "/test2.png"]
   },
