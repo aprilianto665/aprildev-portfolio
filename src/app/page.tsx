@@ -313,25 +313,24 @@ export default function Home() {
           {[
             {
               title: "Movie API",
+              slug: "movie-api",
               description:
                 "RESTful API for movie database with CRUD operations, user authentication, and advanced search functionality.",
               tech: ["Node.js", "Express.js", "MySQL", "JWT", "Multer"],
-              github:
-                "https://github.com/aprilianto665/mission-advanced-backend",
             },
             {
               title: "HSR Profile Tracker",
+              slug: "hsr-profile-tracker",
               description:
                 "A full-stack app for Honkai: Star Rail (HSR), a popular turn-based RPG. It integrates with real in-game data, featuring advanced algorithms for character stat calculations and a complex relics scoring system to optimize builds.",
               tech: ["React.js", "Golang", "Redis"],
-              github: "https://github.com/aprilianto665/hsr-profile-tracker",
             },
             {
               title: "Email Provider",
+              slug: "email-provider",
               description:
                 "EmailProvider is a full-stack, self-hosted email service similar to Gmail, featuring frontend, backend and its SMTP server. It uses SMTP for sending, IMAP for receiving, and includes a working webmail interface.",
               tech: ["React.js", "Golang"],
-              github: "https://github.com/meQlause/EmailProviderMonorepo",
             },
           ].map((project, index) => (
             <div
@@ -354,19 +353,12 @@ export default function Home() {
                   </span>
                 ))}
               </div>
-              <div className="flex space-x-3">
+              <div>
                 <a
-                  href="#"
-                  className="text-orange-500 hover:text-orange-600 text-sm font-medium"
+                  href={`/product/${project.slug}`}
+                  className="inline-block px-4 py-2 bg-orange-500 hover:bg-orange-600 text-white text-sm font-medium rounded-lg transition-colors"
                 >
-                  Live Demo
-                </a>
-                <a
-                  href={project.github}
-                  className="text-gray-500 hover:text-gray-600 text-sm font-medium"
-                  target="_blank"
-                >
-                  GitHub
+                  View Project
                 </a>
               </div>
             </div>
