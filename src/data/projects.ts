@@ -8,6 +8,7 @@ export interface Project {
   github: string;
   demo: string;
   images: string[];
+  status: 'completed' | 'in-progress';
 }
 
 export const projects: Project[] = [
@@ -33,6 +34,7 @@ export const projects: Project[] = [
       "/images/movie-api-2.png",
       "/images/movie-api-3.png",
     ],
+    status: 'in-progress',
   },
   {
     title: "HSR Profile Tracker",
@@ -66,6 +68,7 @@ export const projects: Project[] = [
       "/hsr-profile-tracker2.png",
       "/hsr-profile-tracker3.png",
     ],
+    status: 'completed',
   },
   {
     title: "Email Provider",
@@ -89,5 +92,6 @@ export const projects: Project[] = [
       "/images/email-provider-2.png",
       "/images/email-provider-3.png",
     ],
+    status: 'in-progress',
   },
 ];

@@ -31,9 +31,15 @@ export default function ProjectsSection() {
               ))}
             </div>
             <div>
-              <Button href={`/project/${project.slug}`}>
-                View Project
-              </Button>
+              {project.status === 'completed' ? (
+                <Button href={`/project/${project.slug}`}>
+                  View Project
+                </Button>
+              ) : (
+                <Button disabled className="opacity-50 cursor-not-allowed">
+                  In Progress
+                </Button>
+              )}
             </div>
           </Card>
         ))}
