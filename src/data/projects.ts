@@ -8,33 +8,50 @@ export interface Project {
   github: string;
   demo: string;
   images: string[];
-  status: 'completed' | 'in-progress';
+  status: "completed" | "in-progress";
 }
 
 export const projects: Project[] = [
   {
-    title: "Movie API",
-    slug: "movie-api",
+    title: "Group Chat App",
+    slug: "group-chat-app",
     description:
-      "RESTful API for movie database with CRUD operations, user authentication, and advanced search functionality.",
-    tech: ["Node.js", "Express.js", "MySQL", "JWT", "Multer"],
+      "Real-time collaborative platform with instant messaging, collaborative note-taking, and space management capabilities using serverless architecture.",
+    tech: [
+      "Next.js",
+      "React",
+      "TypeScript",
+      "Tailwind CSS",
+      "Zustand",
+      "Prisma",
+      "PostgreSQL",
+      "Pusher",
+      "NextAuth.js",
+      "Azure Blob Storage",
+    ],
     fullDescription:
-      "A comprehensive RESTful API built for managing movie databases. Features include full CRUD operations, secure user authentication using JWT tokens, advanced search and filtering capabilities, and file upload functionality for movie posters using Multer middleware.",
+      "A modern serverless group chat application built with Next.js and real-time collaboration features. The app provides instant messaging with Pusher WebSocket, collaborative note-taking with block-based editor and drag-and-drop functionality, and multi-space management with role-based access control. Features secure authentication using NextAuth.js with JWT sessions, optimized PostgreSQL database with Prisma ORM, and Azure Blob Storage for file management. The application follows serverless architecture for automatic scaling, cost efficiency, and high performance with real-time capabilities.",
     features: [
-      "User authentication and authorization",
-      "CRUD operations for movies",
-      "Advanced search and filtering",
-      "File upload for movie posters",
-      "Rate limiting and security middleware",
+      "Real-time messaging with Pusher WebSocket",
+      "Collaborative note-taking with block-based editor",
+      "Drag-and-drop functionality via @dnd-kit",
+      "Multi-space management with role-based access",
+      "Secure authentication with NextAuth.js and JWT",
+      "Optimized PostgreSQL database with Prisma ORM",
+      "Azure Blob Storage for file management",
+      "Serverless deployment on Vercel with auto-scaling",
+      "Responsive UI built with Tailwind CSS",
+      "Type safety with TypeScript",
+      "Efficient state management using Zustand",
     ],
-    github: "https://github.com/username/movie-api",
-    demo: "https://movie-api-demo.com",
+    github: "https://github.com/aprilianto665/group-chat-app-submission",
+    demo: "https://group-chat-app-submission.vercel.app",
     images: [
-      "/images/movie-api-1.png",
-      "/images/movie-api-2.png",
-      "/images/movie-api-3.png",
+      "/group-chat-app-1.png",
+      "/group-chat-app-2.png",
+      "/group-chat-app-3.png",
     ],
-    status: 'in-progress',
+    status: "completed",
   },
   {
     title: "HSR Profile Tracker",
@@ -68,7 +85,7 @@ export const projects: Project[] = [
       "/hsr-profile-tracker2.png",
       "/hsr-profile-tracker3.png",
     ],
-    status: 'completed',
+    status: "completed",
   },
   {
     title: "Email Provider",
@@ -92,6 +109,6 @@ export const projects: Project[] = [
       "/images/email-provider-2.png",
       "/images/email-provider-3.png",
     ],
-    status: 'in-progress',
+    status: "in-progress",
   },
 ];
