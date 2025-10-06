@@ -11,6 +11,29 @@ const spaceMono = Space_Mono({
 export const metadata: Metadata = {
   title: "Aprilianto Portfolio",
   description: "Muhammad Aprilianto Portfolio Website",
+  icons: {
+    icon: "/Avatar.png",
+    shortcut: "/Avatar.png",
+    apple: "/Avatar.png",
+  },
+  openGraph: {
+    title: "Aprilianto Portfolio",
+    description: "Muhammad Aprilianto Portfolio Website",
+    images: [
+      {
+        url: "/Avatar.png",
+        width: 512,
+        height: 512,
+        alt: "Aprilianto Avatar",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary",
+    title: "Aprilianto Portfolio",
+    description: "Muhammad Aprilianto Portfolio Website",
+    images: ["/Avatar.png"],
+  },
 };
 
 export default function RootLayout({
