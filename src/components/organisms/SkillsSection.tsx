@@ -1,6 +1,6 @@
 import Card from "../molecules/Card";
 import Icon from "../atoms/Icon";
-import SkillBadge from "../atoms/SkillBadge";
+import Badge from "../atoms/Badge";
 import { languages, frontend, backend, devops, tools } from "../../data/skills";
 
 export default function SkillsSection() {
@@ -24,7 +24,7 @@ export default function SkillsSection() {
             </div>
             <div className="flex flex-wrap gap-2">
               {languages.map((skill) => (
-                <SkillBadge key={skill} skill={skill} />
+                <Badge key={skill}>{skill}</Badge>
               ))}
             </div>
           </div>
@@ -36,7 +36,7 @@ export default function SkillsSection() {
             </div>
             <div className="flex flex-wrap gap-2">
               {frontend.map((skill) => (
-                <SkillBadge key={skill} skill={skill} />
+                <Badge key={skill}>{skill}</Badge>
               ))}
             </div>
           </div>
@@ -48,7 +48,7 @@ export default function SkillsSection() {
             </div>
             <div className="flex flex-wrap gap-2">
               {backend.map((skill) => (
-                <SkillBadge key={skill} skill={skill} />
+                <Badge key={skill}>{skill}</Badge>
               ))}
             </div>
           </div>
@@ -60,7 +60,7 @@ export default function SkillsSection() {
             </div>
             <div className="flex flex-wrap gap-2">
               {[...devops, ...tools].map((skill) => (
-                <SkillBadge key={skill} skill={skill} />
+                <Badge key={skill}>{skill}</Badge>
               ))}
             </div>
           </div>
