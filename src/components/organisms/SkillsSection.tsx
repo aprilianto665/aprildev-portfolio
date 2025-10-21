@@ -1,6 +1,6 @@
 import Card from "../molecules/Card";
 import Icon from "../atoms/Icon";
-import SkillItem from "../molecules/SkillItem";
+import SkillBadge from "../atoms/SkillBadge";
 import { languages, frontend, backend, devops, tools } from "../../data/skills";
 
 export default function SkillsSection() {
@@ -15,61 +15,57 @@ export default function SkillsSection() {
         </p>
       </div>
 
-      <div className="grid grid-cols-1 md:grid-cols-6 lg:grid-cols-8 md:auto-rows-[1fr] lg:auto-rows-[1fr] gap-8">
-        <Card className="md:col-span-4 lg:col-span-4">
-          <Icon name="languages" className="w-8 h-8 mb-4 text-orange-500" />
-          <h3 className="text-xl font-semibold text-gray-900 mb-4">
-            Languages
-          </h3>
-          <div className="grid grid-cols-2 gap-3">
-            {languages.map((skill) => (
-              <SkillItem key={skill} skill={skill} />
-            ))}
+      <Card>
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+          <div>
+            <div className="flex items-center mb-4">
+              <Icon name="languages" className="w-6 h-6 mr-3 text-orange-500" />
+              <h3 className="text-lg font-semibold text-gray-900">Languages</h3>
+            </div>
+            <div className="flex flex-wrap gap-2">
+              {languages.map((skill) => (
+                <SkillBadge key={skill} skill={skill} />
+              ))}
+            </div>
           </div>
-        </Card>
 
-        <Card className="md:col-span-2 lg:col-span-2">
-          <Icon name="frontend" className="w-8 h-8 mb-4 text-orange-500" />
-          <h3 className="text-xl font-semibold text-gray-900 mb-4">Frontend</h3>
-          <div className="space-y-3">
-            {frontend.map((skill) => (
-              <SkillItem key={skill} skill={skill} />
-            ))}
+          <div>
+            <div className="flex items-center mb-4">
+              <Icon name="frontend" className="w-6 h-6 mr-3 text-orange-500" />
+              <h3 className="text-lg font-semibold text-gray-900">Frontend</h3>
+            </div>
+            <div className="flex flex-wrap gap-2">
+              {frontend.map((skill) => (
+                <SkillBadge key={skill} skill={skill} />
+              ))}
+            </div>
           </div>
-        </Card>
 
-        <Card className="md:col-span-2 lg:col-span-2 md:row-span-2 lg:row-span-2">
-          <Icon name="backend" className="w-8 h-8 mb-4 text-orange-500" />
-          <h3 className="text-xl font-semibold text-gray-900 mb-4">Backend</h3>
-          <div className="space-y-3">
-            {backend.map((skill) => (
-              <SkillItem key={skill} skill={skill} />
-            ))}
+          <div>
+            <div className="flex items-center mb-4">
+              <Icon name="backend" className="w-6 h-6 mr-3 text-orange-500" />
+              <h3 className="text-lg font-semibold text-gray-900">Backend</h3>
+            </div>
+            <div className="flex flex-wrap gap-2">
+              {backend.map((skill) => (
+                <SkillBadge key={skill} skill={skill} />
+              ))}
+            </div>
           </div>
-        </Card>
 
-        <Card className="md:col-span-2 lg:col-span-2">
-          <Icon name="container" className="w-8 h-8 mb-4 text-orange-500" />
-          <h3 className="text-xl font-semibold text-gray-900 mb-4">DevOps</h3>
-          <div className="space-y-3">
-            {devops.map((skill) => (
-              <SkillItem key={skill} skill={skill} />
-            ))}
+          <div>
+            <div className="flex items-center mb-4">
+              <Icon name="tools" className="w-6 h-6 mr-3 text-orange-500" />
+              <h3 className="text-lg font-semibold text-gray-900">Tools & Others</h3>
+            </div>
+            <div className="flex flex-wrap gap-2">
+              {[...devops, ...tools].map((skill) => (
+                <SkillBadge key={skill} skill={skill} />
+              ))}
+            </div>
           </div>
-        </Card>
-
-        <Card className="md:col-span-4 lg:col-span-4">
-          <Icon name="tools" className="w-8 h-8 mb-4 text-orange-500" />
-          <h3 className="text-xl font-semibold text-gray-900 mb-4">
-            Tools & Others
-          </h3>
-          <div className="grid grid-cols-2 gap-3">
-            {tools.map((skill) => (
-              <SkillItem key={skill} skill={skill} />
-            ))}
-          </div>
-        </Card>
-      </div>
+        </div>
+      </Card>
     </div>
   );
 }
