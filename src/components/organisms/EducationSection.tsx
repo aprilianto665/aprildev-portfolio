@@ -1,6 +1,6 @@
-import Card from '../molecules/Card';
-import Icon from '../atoms/Icon';
-import Badge from '../atoms/Badge';
+import Card from "../molecules/Card";
+import Icon from "../atoms/Icon";
+import Badge from "../atoms/Badge";
 
 export default function EducationSection() {
   return (
@@ -21,9 +21,7 @@ export default function EducationSection() {
             Education Level
           </h3>
           <div className="space-y-2 mb-4">
-            <p className="text-orange-600 font-semibold">
-              Universitas Terbuka
-            </p>
+            <p className="text-orange-600 font-semibold">Universitas Terbuka</p>
             <p className="text-gray-700">
               Bachelor Degree of Information Systems
             </p>
@@ -54,7 +52,7 @@ export default function EducationSection() {
               <p className="text-gray-700 text-sm">
                 Harisenin.com - Remotely, Indonesia
               </p>
-              <p className="text-gray-600 text-xs">Jun, 2025 - Present</p>
+              <p className="text-gray-600 text-xs">Jun, 2025 - Oct, 2025</p>
             </div>
           </div>
         </Card>
