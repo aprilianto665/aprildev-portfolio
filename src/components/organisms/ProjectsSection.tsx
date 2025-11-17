@@ -1,9 +1,25 @@
+'use client';
+
+import { useState } from 'react';
 import Image from "next/image";
-import Link from "next/link";
 import Card from "../molecules/Card";
-import { projects } from "../../data/projects";
+import ProjectModal from './ProjectModal';
+import { projects, Project } from "../../data/projects";
 
 export default function ProjectsSection() {
+  const [selectedProject, setSelectedProject] = useState<Project | null>(null);
+  const [isModalOpen, setIsModalOpen] = useState(false);
+
+  const handleViewProject = (project: Project) => {
+    setSelectedProject(project);
+    setIsModalOpen(true);
+  };
+
+  const handleCloseModal = () => {
+    setIsModalOpen(false);
+    setSelectedProject(null);
+  };
+
   return (
     <div id="projects" className="max-w-6xl mx-auto px-8 py-16">
       <div className="text-center mb-12">
@@ -32,9 +48,12 @@ export default function ProjectsSection() {
               </h3>
               <div>
                 {project.status === "completed" ? (
-                  <Link href={`/project/${project.slug}`} className="text-orange-500 hover:text-orange-600 font-medium">
+                  <button 
+                    onClick={() => handleViewProject(project)}
+                    className="text-orange-500 hover:text-orange-600 font-medium"
+                  >
                     View Project →
-                  </Link>
+                  </button>
                 ) : (
                   <span className="text-gray-400 font-medium">
                     In Progress
@@ -45,6 +64,12 @@ export default function ProjectsSection() {
           </Card>
         ))}
       </div>
+      
+      <ProjectModal 
+        project={selectedProject}
+        isOpen={isModalOpen}
+        onClose={handleCloseModal}
+      />
     </div>
   );
 }
