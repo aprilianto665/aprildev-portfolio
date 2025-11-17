@@ -30,7 +30,7 @@ export const projects: Project[] = [
       "Azure Blob Storage",
     ],
     fullDescription:
-      "A modern serverless group chat application built with Next.js and real-time collaboration features. The app provides instant messaging with Pusher WebSocket, collaborative note-taking with block-based editor and drag-and-drop functionality, and multi-space management with role-based access control. Features secure authentication using NextAuth.js with JWT sessions, optimized PostgreSQL database with Prisma ORM, and Azure Blob Storage for file management. The application follows serverless architecture for automatic scaling, cost efficiency, and high performance with real-time capabilities.",
+      "A real-time collaborative workspace that combines instant messaging with collaborative note-taking. Users can create multiple spaces, chat in real-time, and work together on shared notes with a block-based editor. Built with serverless architecture for scalability and performance.",
     features: [
       "Real-time messaging with Pusher WebSocket",
       "Collaborative note-taking with block-based editor",
@@ -68,7 +68,7 @@ export const projects: Project[] = [
       "Azure Container Apps",
     ],
     fullDescription:
-      "HSR Profile Tracker is a comprehensive web application designed to help Honkai: Star Rail players optimize their gameplay experience. The app connects to HoYoverse's official API to fetch real-time player data, including character builds, equipment (relics), and statistics. Players can input their game UID to automatically import their character roster and equipment inventory. The core feature is an intelligent scoring system that evaluates relic quality using weighted algorithms, helping players identify which equipment pieces are worth upgrading and which characters have the most optimized builds. This eliminates the guesswork in equipment management and provides data-driven insights for character progression. Built with modern technologies and optimized for performance, achieving 86% faster API responses and deployed on Azure for reliable access.",
+      "A game optimization tool for Honkai: Star Rail players that analyzes character builds and equipment quality. Players enter their game UID to import their data, and the app uses intelligent scoring algorithms to evaluate which equipment is worth upgrading and which characters are optimally built.",
     features: [
       "Real in-game data integration with HoYoverse API",
       "Weighted scoring algorithm using linear combination formula",
