@@ -1,6 +1,6 @@
 import Image from "next/image";
+import Link from "next/link";
 import Card from "../molecules/Card";
-import Button from "../atoms/Button";
 import { projects } from "../../data/projects";
 
 export default function ProjectsSection() {
@@ -32,13 +32,13 @@ export default function ProjectsSection() {
               </h3>
               <div>
                 {project.status === "completed" ? (
-                  <Button href={`/project/${project.slug}`}>
-                    View Project
-                  </Button>
+                  <Link href={`/project/${project.slug}`} className="text-orange-500 hover:text-orange-600 font-medium">
+                    View Project →
+                  </Link>
                 ) : (
-                  <Button disabled className="opacity-50 cursor-not-allowed">
+                  <span className="text-gray-400 font-medium">
                     In Progress
-                  </Button>
+                  </span>
                 )}
               </div>
             </div>

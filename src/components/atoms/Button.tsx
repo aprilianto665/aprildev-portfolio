@@ -1,7 +1,7 @@
 interface ButtonProps {
   children: React.ReactNode;
   href?: string;
-  variant?: 'primary';
+  variant?: 'primary' | 'outline';
   disabled?: boolean;
   className?: string;
 }
@@ -9,7 +9,8 @@ interface ButtonProps {
 export default function Button({ children, href, variant = 'primary', disabled = false, className = '' }: ButtonProps) {
   const baseClasses = "inline-block px-4 py-2 text-sm font-medium rounded-lg transition-colors";
   const variants = {
-    primary: "bg-orange-500 hover:bg-orange-600 text-white"
+    primary: "bg-orange-500 hover:bg-orange-600 text-white",
+    outline: "border border-orange-500 text-orange-500 hover:bg-orange-50"
   };
 
   const classes = `${baseClasses} ${variants[variant]} ${className}`;
