@@ -4,6 +4,7 @@ export const languages = [
   "Java",
   "Golang",
   "Python",
+  "PHP",
 ];
 
 export const frontend = ["HTML", "CSS", "React.js", "Next.js", "Tailwind CSS"];
@@ -13,6 +14,7 @@ export const backend = [
   "Express.js",
   "NestJS",
   "Go Fiber",
+  "Laravel",
   "MongoDB",
   "Redis",
   "RabbitMQ",
