@@ -32,7 +32,7 @@ export default function ProjectModal({ project, isOpen, onClose }: ProjectModalP
 
   return (
     <div className="fixed inset-0 bg-black/60 z-50 flex items-center justify-center p-4">
-      <div className="bg-white rounded-2xl p-6 shadow-lg border border-orange-100 max-w-4xl w-full max-h-[90vh] overflow-y-auto relative">
+      <div className="bg-white rounded-2xl p-6 shadow-lg border border-orange-100 max-w-6xl w-full max-h-[90vh] overflow-y-auto relative">
         <button
           onClick={onClose}
           className="absolute top-4 right-4 text-orange-500 hover:text-orange-600 text-4xl z-10"
