@@ -1,10 +1,9 @@
-import Card from '../molecules/Card';
-import Badge from '../atoms/Badge';
-import Button from '../atoms/Button';
-import { projects } from '../../data/projects';
+import Image from "next/image";
+import Card from "../molecules/Card";
+import Button from "../atoms/Button";
+import { projects } from "../../data/projects";
 
 export default function ProjectsSection() {
-
   return (
     <div id="projects" className="max-w-6xl mx-auto px-8 py-16">
       <div className="text-center mb-12">
@@ -16,30 +15,32 @@ export default function ProjectsSection() {
         </p>
       </div>
 
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
         {projects.map((project, index) => (
-          <Card key={index} className="flex flex-col justify-between">
-            <h3 className="text-xl font-semibold text-gray-900 mb-3">
-              {project.title}
-            </h3>
-            <p className="text-gray-600 mb-4 text-sm leading-relaxed">
-              {project.description}
-            </p>
-            <div className="flex flex-wrap gap-2 mb-4">
-              {project.tech.map((tech) => (
-                <Badge key={tech}>{tech}</Badge>
-              ))}
+          <Card key={index} className="flex flex-col justify-between gap-4">
+            <div className="w-full aspect-video flex-shrink-0 rounded-lg overflow-hidden relative">
+              <Image
+                src={project.images[0]}
+                alt={project.title}
+                fill
+                className="object-contain"
+              />
             </div>
-            <div>
-              {project.status === 'completed' ? (
-                <Button href={`/project/${project.slug}`}>
-                  View Project
-                </Button>
-              ) : (
-                <Button disabled className="opacity-50 cursor-not-allowed">
-                  In Progress
-                </Button>
-              )}
+            <div className="flex flex-col justify-between flex-1">
+              <h3 className="text-xl font-semibold text-gray-900 mb-3">
+                {project.title}
+              </h3>
+              <div>
+                {project.status === "completed" ? (
+                  <Button href={`/project/${project.slug}`}>
+                    View Project
+                  </Button>
+                ) : (
+                  <Button disabled className="opacity-50 cursor-not-allowed">
+                    In Progress
+                  </Button>
+                )}
+              </div>
             </div>
           </Card>
         ))}

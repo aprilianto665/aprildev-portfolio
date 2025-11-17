@@ -87,28 +87,4 @@ export const projects: Project[] = [
     ],
     status: "completed",
   },
-  {
-    title: "Email Provider",
-    slug: "email-provider",
-    description:
-      "EmailProvider is a full-stack, self-hosted email service similar to Gmail, featuring frontend, backend and its SMTP server. It uses SMTP for sending, IMAP for receiving, and includes a working webmail interface.",
-    tech: ["React.js", "Golang"],
-    fullDescription:
-      "A complete self-hosted email solution that rivals commercial email providers. Built from scratch with custom SMTP and IMAP implementations, featuring a modern webmail interface and comprehensive email management capabilities.",
-    features: [
-      "Custom SMTP server implementation",
-      "IMAP protocol support",
-      "Modern webmail interface",
-      "Email composition and management",
-      "Self-hosted deployment",
-    ],
-    github: "https://github.com/username/email-provider",
-    demo: "https://email-provider-demo.com",
-    images: [
-      "/images/email-provider-1.png",
-      "/images/email-provider-2.png",
-      "/images/email-provider-3.png",
-    ],
-    status: "in-progress",
-  },
 ];
