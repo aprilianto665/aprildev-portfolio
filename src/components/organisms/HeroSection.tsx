@@ -1,5 +1,5 @@
 import Image from "next/image";
-import Badge from '../atoms/Badge';
+import Badge from "../atoms/Badge";
 
 export default function HeroSection() {
   const techStack = ["React.js", "Node.js", "Express.js", "Golang"];
@@ -22,7 +22,7 @@ export default function HeroSection() {
           </div>
           <div className="flex-1 text-center lg:text-left space-y-4 sm:space-y-6">
             <div className="space-y-2">
-              <Badge variant="primary">Full Stack Developer</Badge>
+              <Badge variant="primary">Software Engineer</Badge>
               <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold leading-tight">
                 <span className="block bg-gradient-to-r from-gray-900 to-gray-700 bg-clip-text text-transparent">
                   Muhammad
@@ -33,14 +33,23 @@ export default function HeroSection() {
               </h1>
             </div>
             <p className="text-sm sm:text-base lg:text-lg leading-relaxed text-gray-600 font-medium">
-              Currently transitioning into web development with a strong
-              background in document control and administrative support in
-              large-scale infrastructure projects. Actively attending a Full
-              Stack Developer bootcamp at{" "}
               <span className="text-orange-500 font-semibold">
-                Harisenin.com
+                Software Engineer
               </span>{" "}
-              to build technical proficiency in modern web technologies.
+              with a{" "}
+              <span className="text-orange-500 font-semibold">
+                language-agnostic mindset
+              </span>
+              , transitioning from document control to web development. I focus
+              on building{" "}
+              <span className="text-orange-500 font-semibold">
+                scalable, maintainable systems
+              </span>{" "}
+              with{" "}
+              <span className="text-orange-500 font-semibold">
+                clean architecture
+              </span>
+              , selecting technologies based on use case rather than preference.
             </p>
             <div className="flex flex-wrap justify-center lg:justify-start gap-2 sm:gap-3 pt-4">
               {techStack.map((tech) => (
