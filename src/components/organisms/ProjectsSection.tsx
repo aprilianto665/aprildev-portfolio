@@ -27,7 +27,7 @@ export default function ProjectsSection() {
           My <span className="text-orange-500">Projects</span>
         </h2>
         <p className="text-gray-600 text-lg max-w-2xl mx-auto">
-          Some of the projects I&apos;ve worked on during my learning journey
+          Some of the projects I&apos;ve worked on
         </p>
       </div>
 
