@@ -50,7 +50,7 @@ export default function ProjectsSection() {
                 {project.status === "completed" ? (
                   <button 
                     onClick={() => handleViewProject(project)}
-                    className="text-orange-500 hover:text-orange-600 font-medium"
+                    className="text-orange-500 hover:text-orange-600 font-medium cursor-pointer"
                   >
                     View Project →
                   </button>

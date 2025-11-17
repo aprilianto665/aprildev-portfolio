@@ -35,7 +35,7 @@ export default function ProjectModal({ project, isOpen, onClose }: ProjectModalP
       <div className="bg-white rounded-2xl p-6 shadow-lg border border-orange-100 max-w-6xl w-full max-h-[90vh] overflow-y-auto relative">
         <button
           onClick={onClose}
-          className="absolute top-4 right-4 text-orange-500 hover:text-orange-600 text-4xl z-10"
+          className="absolute top-4 right-4 text-orange-500 hover:text-orange-600 text-4xl z-10 cursor-pointer"
         >
           ×
         </button>
