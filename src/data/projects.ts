@@ -64,7 +64,7 @@ export const projects: Project[] = [
     status: "completed",
   },
   {
-    title: "Predictive Lead Scoring Portal",
+    title: "Predictive Lead Scoring Portal for Banking Sales",
     slug: "predictive-lead-scoring-portal",
 
     tech: [
