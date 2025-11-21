@@ -11,6 +11,31 @@ export interface Project {
 
 export const projects: Project[] = [
   {
+    title: "HSR Profile Tracker",
+    slug: "hsr-profile-tracker",
+
+    tech: [
+      "React.js",
+      "Tailwind CSS",
+      "Golang",
+      "Go Fiber",
+      "Redis",
+      "Docker",
+      "Azure Container Apps",
+    ],
+    fullDescription:
+      "A game optimization tool for Honkai: Star Rail players that analyzes character builds and equipment quality. Players enter their game UID to import their data, and the app uses intelligent scoring algorithms to evaluate which equipment is worth upgrading and which characters are optimally built.",
+
+    github: "https://github.com/aprilianto665/hsr-profile-tracker-monorepo",
+    demo: "https://app.hsr-profile.com/",
+    images: [
+      "/hsr-profile-tracker1.png",
+      "/hsr-profile-tracker2.png",
+      "/hsr-profile-tracker3.png",
+    ],
+    status: "completed",
+  },
+  {
     title: "Group Chat App",
     slug: "group-chat-app",
 
@@ -35,31 +60,6 @@ export const projects: Project[] = [
       "/group-chat-app-1.png",
       "/group-chat-app-2.png",
       "/group-chat-app-3.png",
-    ],
-    status: "completed",
-  },
-  {
-    title: "HSR Profile Tracker",
-    slug: "hsr-profile-tracker",
-
-    tech: [
-      "React.js",
-      "Tailwind CSS",
-      "Golang",
-      "Go Fiber",
-      "Redis",
-      "Docker",
-      "Azure Container Apps",
-    ],
-    fullDescription:
-      "A game optimization tool for Honkai: Star Rail players that analyzes character builds and equipment quality. Players enter their game UID to import their data, and the app uses intelligent scoring algorithms to evaluate which equipment is worth upgrading and which characters are optimally built.",
-
-    github: "https://github.com/aprilianto665/hsr-profile-tracker-monorepo",
-    demo: "https://app.hsr-profile.com/",
-    images: [
-      "/hsr-profile-tracker1.png",
-      "/hsr-profile-tracker2.png",
-      "/hsr-profile-tracker3.png",
     ],
     status: "completed",
   },
