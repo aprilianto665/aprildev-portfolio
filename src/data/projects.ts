@@ -91,7 +91,7 @@ export const projects: Project[] = [
 
     github: "https://github.com/cuanversation",
     demo: "https://cuanversation.com/dashboard",
-    images: ["/cuanvers1.png", "/cuanvers2.png", "/cuanvers3.png"],
+    images: ["/cuanvers1.png", "/cuanvers2.png"],
     status: "completed",
   },
 ];
