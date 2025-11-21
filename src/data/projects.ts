@@ -63,4 +63,35 @@ export const projects: Project[] = [
     ],
     status: "completed",
   },
+  {
+    title: "Predictive Lead Scoring Portal",
+    slug: "predictive-lead-scoring-portal",
+
+    tech: [
+      "React",
+      "TypeScript",
+      "Tailwind CSS",
+      "Ant Design",
+      "Zustand",
+      "React Hook Form",
+      "Zod",
+      "Golang",
+      "Go Fiber",
+      "GORM",
+      "PostgreSQL",
+      "Scikit-Learn",
+      "ONNX",
+      "Azure OpenAI",
+      "Docker",
+      "Azure VM",
+      "GitHub Actions",
+    ],
+    fullDescription:
+      "A machine learning-based web portal designed to optimize banking sales lead targeting using predictive analytics and real-time dashboards. Features responsive interfaces with data visualization for customer scoring, campaign tracking, and KPI monitoring. Integrates with backend APIs and ML models to provide feedback loops for customer tagging and performance analysis, enhancing sales team efficiency through improved usability and dashboard interactivity.",
+
+    github: "https://github.com/cuanversation",
+    demo: "https://cuanversation.com/dashboard",
+    images: ["/cuanvers1.png", "/cuanvers2.png", "/cuanvers3.png"],
+    status: "completed",
+  },
 ];
