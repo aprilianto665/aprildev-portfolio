@@ -12,8 +12,9 @@ export default function Button({ children, href, variant = 'primary', disabled =
     primary: "bg-orange-500 hover:bg-orange-600 text-white",
     outline: "border border-orange-500 text-orange-500 hover:bg-orange-50"
   };
+  const disabledClasses = "opacity-50 cursor-not-allowed pointer-events-none";
 
-  const classes = `${baseClasses} ${variants[variant]} ${className}`;
+  const classes = `${baseClasses} ${variants[variant]} ${disabled ? disabledClasses : ''} ${className}`;
 
   if (href && !disabled) {
     return (

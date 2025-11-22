@@ -27,7 +27,7 @@ export const projects: Project[] = [
       "A game optimization tool for Honkai: Star Rail players that analyzes character builds and equipment quality. Players enter their game UID to import their data, and the app uses intelligent scoring algorithms to evaluate which equipment is worth upgrading and which characters are optimally built.",
 
     github: "https://github.com/aprilianto665/hsr-profile-tracker-monorepo",
-    demo: "https://app.hsr-profile.com/",
+    demo: "",
     images: [
       "/hsr-profile-tracker1.png",
       "/hsr-profile-tracker2.png",

@@ -65,10 +65,10 @@ export default function ProjectModal({ project, isOpen, onClose }: ProjectModalP
               </div>
               
               <div className="flex gap-4">
-                <Button href={project.github}>
+                <Button href={project.github} disabled={!project.github}>
                   View on GitHub
                 </Button>
-                <Button href={project.demo}>
+                <Button href={project.demo} disabled={!project.demo}>
                   Live Demo
                 </Button>
               </div>
