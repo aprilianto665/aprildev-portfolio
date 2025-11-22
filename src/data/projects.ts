@@ -94,4 +94,26 @@ export const projects: Project[] = [
     images: ["/cuanvers1.png", "/cuanvers2.png"],
     status: "completed",
   },
+  {
+    title: "PT Antang Gunung Meratus E-Requisition Form",
+    slug: "pt-agm-e-requisition-form",
+
+    tech: [
+      "Next.js",
+      "React",
+      "TypeScript",
+      "Tailwind CSS",
+      "Prisma",
+      "NextAuth.js",
+      "Zustand",
+      "React PDF",
+    ],
+    fullDescription:
+      "A digital web-based system replacing manual Excel-based Requisition Form processes for PT AGM's Supply Chain department. Features auto-suggest functionality for item descriptions, stock codes, part numbers, and units of measure (UoM) to ensure data consistency. Includes automatic validation for required fields, real-time calculation of subtotals, 11% VAT, currency conversion to IDR, and PDF export with proper signature layouts. Implements smart logic to display additional Site Manager/Chief signature fields when subtotals exceed certain thresholds.",
+
+    github: "",
+    demo: "",
+    images: ["/e-requisition1.png"],
+    status: "completed",
+  },
 ];
