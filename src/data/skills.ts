@@ -1,10 +1,12 @@
 export const languages = [
-  "JavaScript",
-  "TypeScript",
-  "Java",
+  "C",
+  "C#",
   "Golang",
-  "Python",
+  "Java",
+  "JavaScript",
   "PHP",
+  "Python",
+  "TypeScript",
 ];
 
 export const frontend = ["HTML", "CSS", "React.js", "Next.js", "Tailwind CSS"];
