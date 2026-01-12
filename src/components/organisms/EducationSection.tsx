@@ -43,7 +43,7 @@ export default function EducationSection() {
               <p className="text-gray-700 text-sm">
                 Dicoding - Remotely, Indonesia
               </p>
-              <p className="text-gray-600 text-xs">Aug, 2025 - Present</p>
+              <p className="text-gray-600 text-xs">Aug, 2025 - Jan, 2026</p>
             </div>
             <div className="border-l-2 border-orange-200 pl-4">
               <p className="text-orange-600 font-semibold text-sm">
