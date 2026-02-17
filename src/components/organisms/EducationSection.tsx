@@ -27,7 +27,7 @@ export default function EducationSection() {
             </p>
             <p className="text-gray-600 text-sm">2024-2028 (Expected)</p>
           </div>
-          <Badge>GPA: 3.85/4.00</Badge>
+          <Badge>GPA: 3.89/4.00</Badge>
         </Card>
 
         <Card>
