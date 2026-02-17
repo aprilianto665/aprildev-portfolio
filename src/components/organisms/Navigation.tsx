@@ -10,7 +10,7 @@ export default function Navigation() {
   ];
 
   return (
-    <nav className="fixed top-0 left-0 right-0 z-50 bg-white/80 backdrop-blur-md border-b border-orange-100">
+    <nav className="fixed top-0 left-0 right-0 z-50 bg-white/80 backdrop-blur-md">
       <div className="max-w-6xl mx-auto px-8 py-4">
         <div className="flex items-center justify-between">
           <div className="text-xl font-bold text-gray-900">

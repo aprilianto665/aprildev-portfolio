@@ -7,10 +7,9 @@ export default function HeroSection() {
   return (
     <div
       id="about"
-      className="flex items-center justify-center px-4 sm:px-6 lg:px-8 pt-20 sm:pt-24"
+      className="bg-white px-4 sm:px-6 lg:px-8 pt-20 sm:pt-24 pb-16"
     >
-      <div className="bg-white/90 backdrop-blur-sm rounded-2xl sm:rounded-3xl shadow-lg p-6 sm:p-8 lg:p-10 max-w-6xl w-full border border-orange-100 hover:shadow-xl transition-all duration-300">
-        <div className="flex flex-col lg:flex-row items-center gap-6 sm:gap-8 lg:gap-10">
+      <div className="max-w-6xl mx-auto flex flex-col lg:flex-row items-center gap-6 sm:gap-8 lg:gap-10">
           <div className="flex-shrink-0 relative group h-60 w-60 sm:h-80 sm:w-80 md:h-96 md:w-96">
             <div className="w-70 absolute -inset-1 bg-[#FFECE3] rounded-2xl hidden sm:block"></div>
             <Image
@@ -57,7 +56,6 @@ export default function HeroSection() {
               ))}
             </div>
           </div>
-        </div>
       </div>
     </div>
   );
