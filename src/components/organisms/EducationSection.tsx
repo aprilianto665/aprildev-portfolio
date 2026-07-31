@@ -39,23 +39,31 @@ export default function EducationSection() {
             Professional Training
           </h3>
           <div className="space-y-3">
-            <div className="p-3.5 bg-[repeating-linear-gradient(-45deg,#fde68a,#fde68a_5px,#fef08a_5px,#fef08a_10px)] border-2 border-black rounded-[255px_15px_225px_15px/15px_225px_15px_255px] outline outline-1 outline-black/35 outline-offset-[-3px] space-y-1">
-              <p className="text-black font-extrabold text-base">
-                Asah Led by Dicoding
+            <div className="p-3.5 bg-[repeating-linear-gradient(-45deg,#fde68a,#fde68a_5px,#fef08a_5px,#fef08a_10px)] border-2 border-black rounded-[255px_15px_225px_15px/15px_225px_15px_255px] outline outline-1 outline-black/35 outline-offset-[-3px] flex flex-col sm:flex-row justify-between items-start sm:items-center gap-2">
+              <div className="space-y-0.5">
+                <p className="text-black font-extrabold text-base">
+                  Asah Led by Dicoding
+                </p>
+                <p className="text-gray-900 font-bold text-xs sm:text-sm">
+                  Dicoding - Remotely, Indonesia
+                </p>
+              </div>
+              <p className="text-gray-800 font-bold text-xs sm:text-sm shrink-0 self-start sm:self-center">
+                Aug, 2025 - Jan, 2026
               </p>
-              <p className="text-gray-900 font-bold text-xs sm:text-sm">
-                Dicoding - Remotely, Indonesia
-              </p>
-              <p className="text-gray-800 font-semibold text-xs">Aug, 2025 - Jan, 2026</p>
             </div>
-            <div className="p-3.5 bg-[repeating-linear-gradient(-45deg,#fde68a,#fde68a_5px,#fef08a_5px,#fef08a_10px)] border-2 border-black rounded-[255px_15px_225px_15px/15px_225px_15px_255px] outline outline-1 outline-black/35 outline-offset-[-3px] space-y-1">
-              <p className="text-black font-extrabold text-base">
-                Full Stack Developer Bootcamp
+            <div className="p-3.5 bg-[repeating-linear-gradient(-45deg,#fde68a,#fde68a_5px,#fef08a_5px,#fef08a_10px)] border-2 border-black rounded-[255px_15px_225px_15px/15px_225px_15px_255px] outline outline-1 outline-black/35 outline-offset-[-3px] flex flex-col sm:flex-row justify-between items-start sm:items-center gap-2">
+              <div className="space-y-0.5">
+                <p className="text-black font-extrabold text-base">
+                  Full Stack Developer Bootcamp
+                </p>
+                <p className="text-gray-900 font-bold text-xs sm:text-sm">
+                  Harisenin.com - Remotely, Indonesia
+                </p>
+              </div>
+              <p className="text-gray-800 font-bold text-xs sm:text-sm shrink-0 self-start sm:self-center">
+                Jun, 2025 - Oct, 2025
               </p>
-              <p className="text-gray-900 font-bold text-xs sm:text-sm">
-                Harisenin.com - Remotely, Indonesia
-              </p>
-              <p className="text-gray-800 font-semibold text-xs">Jun, 2025 - Oct, 2025</p>
             </div>
           </div>
         </Card>
