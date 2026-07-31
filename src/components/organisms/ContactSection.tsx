@@ -27,12 +27,12 @@ export default function ContactSection() {
   ];
 
   return (
-    <div id="contact" className="max-w-6xl mx-auto px-8 py-16">
-      <div className="text-center mb-12">
-        <h2 className="text-4xl font-bold text-gray-900 mb-4">
-          Get In <span className="text-orange-500">Touch</span>
+    <div id="contact" className="max-w-6xl mx-auto px-4 sm:px-8 py-16 scroll-mt-20">
+      <div className="text-center mb-12 space-y-2">
+        <h2 className="text-3xl sm:text-4xl font-extrabold text-black">
+          Get In <span className="text-orange-600">Touch</span>
         </h2>
-        <p className="text-gray-600 text-lg max-w-2xl mx-auto">
+        <p className="text-gray-800 font-bold text-base sm:text-lg max-w-2xl mx-auto">
           Let&apos;s connect and discuss opportunities or collaborations
         </p>
       </div>
@@ -40,18 +40,18 @@ export default function ContactSection() {
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
         {contacts.map((contact) => (
           <Card key={contact.title}>
-            <Icon name={contact.icon} className="w-8 h-8 mb-4 text-orange-500" />
-            <h3 className="text-xl font-semibold text-gray-900 mb-3">
+            <Icon name={contact.icon} className="w-8 h-8 mb-4 text-orange-600" />
+            <h3 className="text-xl font-extrabold text-black mb-3">
               {contact.title}
             </h3>
-            <p className="text-gray-600 mb-4 text-sm">
+            <p className="text-gray-700 font-medium mb-4 text-sm">
               {contact.description}
             </p>
             <a
               href={contact.link}
               target={contact.icon !== "email" ? "_blank" : undefined}
               rel={contact.icon !== "email" ? "noopener noreferrer" : undefined}
-              className="text-orange-500 hover:text-orange-600 font-medium"
+              className="text-orange-600 hover:text-orange-700 font-extrabold break-all transition-colors"
             >
               {contact.linkText}
             </a>

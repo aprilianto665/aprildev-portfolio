@@ -5,6 +5,7 @@ import EducationSection from '../components/organisms/EducationSection';
 import SkillsSection from '../components/organisms/SkillsSection';
 import ProjectsSection from '../components/organisms/ProjectsSection';
 import ContactSection from '../components/organisms/ContactSection';
+import Footer from '../components/organisms/Footer';
 
 export default function Home() {
   return (
@@ -15,6 +16,7 @@ export default function Home() {
       <SkillsSection />
       <ProjectsSection />
       <ContactSection />
+      <Footer />
     </Layout>
   );
 }
