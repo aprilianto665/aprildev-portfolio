@@ -6,7 +6,7 @@
 
 @theme inline {
   --color-foreground: var(--foreground);
-  --font-mono: var(--font-space-mono);
+  --font-mono: var(--font-comic-neue);
 }
 
 html { scroll-behavior: smooth; }

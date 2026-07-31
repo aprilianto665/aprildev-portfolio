@@ -1,12 +1,12 @@
 import type { Metadata } from "next";
-import { Space_Mono } from "next/font/google";
+import { Comic_Neue } from "next/font/google";
 import "./globals.css";
 import StructuredData from "../components/StructuredData";
 
-const spaceMono = Space_Mono({
-  variable: "--font-space-mono",
+const comicNeue = Comic_Neue({
+  variable: "--font-comic-neue",
   subsets: ["latin"],
-  weight: ["400", "700"],
+  weight: ["300", "400", "700"],
 });
 
 export const metadata: Metadata = {
@@ -55,7 +55,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${spaceMono.variable} font-mono antialiased bg-[#FFECE3]`}
+        className={`${comicNeue.variable} font-mono antialiased bg-[#FFECE3]`}
         cz-shortcut-listen="true"
       >
         <StructuredData />
