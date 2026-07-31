@@ -7,11 +7,9 @@ export default function HeroSection() {
   return (
     <div
       id="about"
-      className="relative mt-12 sm:mt-16 lg:mt-20 scroll-mt-20 mx-4 sm:mx-8 lg:mx-12 bg-white"
+      className="relative mt-12 sm:mt-16 lg:mt-20 scroll-mt-20 mx-4 sm:mx-8 lg:mx-12 bg-white border-2 border-black rounded-[255px_15px_225px_15px/15px_225px_15px_255px] outline outline-1 outline-black/30 outline-offset-[-4px] overflow-hidden"
     >
-
-
-      <div className="flex flex-col lg:flex-row items-stretch overflow-hidden">
+      <div className="flex flex-col lg:flex-row items-stretch">
         {/* Avatar Image Section - Full to top, left, bottom borders with wavy right border */}
         <div className="w-full lg:w-80 xl:w-[420px] flex-shrink-0 relative min-h-[300px] sm:min-h-[380px] lg:min-h-[440px] bg-white">
           <Image
