@@ -12,8 +12,8 @@ export default function HeroSection() {
 
 
       <div className="flex flex-col lg:flex-row items-stretch overflow-hidden">
-        {/* Avatar Image Section - Full to top, left, bottom borders */}
-        <div className="w-full lg:w-80 xl:w-[420px] flex-shrink-0 relative min-h-[300px] sm:min-h-[380px] lg:min-h-[440px] border-b-4 lg:border-b-0 lg:border-r-4 border-black bg-white">
+        {/* Avatar Image Section - Full to top, left, bottom borders with wavy right border */}
+        <div className="w-full lg:w-80 xl:w-[420px] flex-shrink-0 relative min-h-[300px] sm:min-h-[380px] lg:min-h-[440px] bg-white">
           <Image
             fill
             src="/Avatar.png"
@@ -21,6 +21,34 @@ export default function HeroSection() {
             className="object-cover object-center"
             priority
           />
+          {/* Wavy border right for desktop */}
+          <svg
+            className="hidden lg:block absolute -right-[6px] top-0 bottom-0 h-full w-4 z-20 text-black pointer-events-none"
+            preserveAspectRatio="none"
+            viewBox="0 0 10 100"
+          >
+            <path
+              d="M 4,0 Q 9,12.5 4,25 T 4,50 T 4,75 T 4,100"
+              fill="none"
+              stroke="currentColor"
+              strokeWidth="4"
+              vectorEffect="non-scaling-stroke"
+            />
+          </svg>
+          {/* Wavy border bottom for mobile */}
+          <svg
+            className="block lg:hidden absolute -bottom-[6px] left-0 right-0 w-full h-4 z-20 text-black pointer-events-none"
+            preserveAspectRatio="none"
+            viewBox="0 0 100 10"
+          >
+            <path
+              d="M 0,4 Q 12.5,9 25,4 T 50,4 T 75,4 T 100,4"
+              fill="none"
+              stroke="currentColor"
+              strokeWidth="4"
+              vectorEffect="non-scaling-stroke"
+            />
+          </svg>
         </div>
 
         {/* Content Section */}
