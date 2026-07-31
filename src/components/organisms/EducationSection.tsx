@@ -19,9 +19,7 @@ export default function EducationSection() {
 
       <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
         <Card>
-          <div className="inline-block p-2 bg-amber-200 border-2 border-black rounded-lg mb-4 rotate-[-2deg]">
-            <Icon name="education" className="w-8 h-8 text-black" />
-          </div>
+          <Icon name="education" className="w-8 h-8 text-orange-600 mb-4" />
           <h3 className="text-xl font-extrabold text-black mb-3">
             Education Level
           </h3>
@@ -36,9 +34,7 @@ export default function EducationSection() {
         </Card>
 
         <Card>
-          <div className="inline-block p-2 bg-orange-200 border-2 border-black rounded-lg mb-4 rotate-[2deg]">
-            <Icon name="training" className="w-8 h-8 text-black" />
-          </div>
+          <Icon name="training" className="w-8 h-8 text-orange-600 mb-4" />
           <h3 className="text-xl font-extrabold text-black mb-3">
             Professional Training
           </h3>
