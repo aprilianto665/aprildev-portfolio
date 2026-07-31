@@ -7,10 +7,10 @@ interface ButtonProps {
 }
 
 export default function Button({ children, href, variant = 'primary', disabled = false, className = '' }: ButtonProps) {
-  const baseClasses = "inline-block px-4 py-2 text-sm font-medium rounded-lg transition-colors";
+  const baseClasses = "inline-block px-4 py-2 text-sm font-extrabold border-2 border-black rounded-[255px_15px_225px_15px/15px_225px_15px_255px] outline outline-1 outline-black/35 outline-offset-[-3px] select-none transition-transform hover:-translate-y-0.5";
   const variants = {
-    primary: "bg-orange-500 hover:bg-orange-600 text-white",
-    outline: "border border-orange-500 text-orange-500 hover:bg-orange-50"
+    primary: "bg-[repeating-linear-gradient(-45deg,#f97316,#f97316_5px,#fb923c_5px,#fb923c_10px)] text-white",
+    outline: "bg-[repeating-linear-gradient(45deg,#fed7aa,#fed7aa_5px,#ffedd5_5px,#ffedd5_10px)] text-black"
   };
   const disabledClasses = "opacity-50 cursor-not-allowed pointer-events-none";
 

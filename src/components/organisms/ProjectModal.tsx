@@ -31,28 +31,28 @@ export default function ProjectModal({ project, isOpen, onClose }: ProjectModalP
   if (!isOpen || !project) return null;
 
   return (
-    <div className="fixed inset-0 bg-black/60 z-50 flex items-center justify-center p-4">
-      <div className="bg-white rounded-2xl p-6 shadow-lg border border-orange-100 max-w-6xl w-full max-h-[90vh] overflow-y-auto relative">
+    <div className="fixed inset-0 bg-black/60 z-50 flex items-center justify-center p-4 backdrop-blur-xs">
+      <div className="bg-[repeating-linear-gradient(45deg,#ffffff,#ffffff_6px,#fcfbf9_6px,#fcfbf9_12px)] border-2 border-black rounded-[255px_15px_225px_15px/15px_225px_15px_255px] outline outline-1 outline-black/30 outline-offset-[-4px] p-6 sm:p-8 max-w-6xl w-full max-h-[90vh] overflow-y-auto relative">
         <button
           onClick={onClose}
-          className="absolute top-4 right-4 text-orange-500 hover:text-orange-600 text-4xl z-10 cursor-pointer"
+          className="absolute top-4 right-4 w-9 h-9 flex items-center justify-center bg-amber-200 border-2 border-black rounded-full font-extrabold text-2xl text-black hover:bg-amber-300 z-20 cursor-pointer"
         >
           ×
         </button>
         
         <div className="pr-8">
-          <h1 className="text-3xl font-bold text-gray-900 mb-6">
+          <h1 className="text-2xl sm:text-3xl font-extrabold text-black mb-6">
             {project.title}
           </h1>
           
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
             <div>
-              <p className="text-gray-600 mb-6 leading-relaxed">
+              <p className="text-gray-800 font-bold mb-6 leading-relaxed">
                 {project.fullDescription}
               </p>
               
               <div className="mb-6">
-                <h2 className="text-xl font-semibold text-gray-900 mb-3">
+                <h2 className="text-xl font-extrabold text-black mb-3">
                   Tech Stack
                 </h2>
                 <div className="flex flex-wrap gap-2">
@@ -68,31 +68,33 @@ export default function ProjectModal({ project, isOpen, onClose }: ProjectModalP
                 <Button href={project.github} disabled={!project.github}>
                   View on GitHub
                 </Button>
-                <Button href={project.demo} disabled={!project.demo}>
+                <Button href={project.demo} disabled={!project.demo} variant="outline">
                   Live Demo
                 </Button>
               </div>
             </div>
             
             <div className="flex flex-col justify-center">
-              <Image
-                src={project.images[currentImageIndex]}
-                alt={project.title}
-                width={800}
-                height={400}
-                sizes="(max-width: 768px) 100vw, 800px"
-                className="w-full h-auto max-w-2xl mx-auto object-contain rounded-lg mb-4"
-              />
+              <div className="border-2 border-black rounded-xl overflow-hidden bg-white p-2 mb-4">
+                <Image
+                  src={project.images[currentImageIndex]}
+                  alt={project.title}
+                  width={800}
+                  height={400}
+                  sizes="(max-width: 768px) 100vw, 800px"
+                  className="w-full h-auto max-w-2xl mx-auto object-contain rounded-lg"
+                />
+              </div>
               {project.images.length > 1 && (
                 <div className="flex gap-2 justify-center overflow-x-auto w-full">
                   {project.images.map((image, index) => (
                     <button
                       key={index}
                       onClick={() => setCurrentImageIndex(index)}
-                      className={`border-2 rounded-lg overflow-hidden shrink-0 ${
+                      className={`border-2 border-black rounded-lg overflow-hidden shrink-0 transition-transform ${
                         currentImageIndex === index
-                          ? "border-orange-500"
-                          : "border-gray-300"
+                          ? "scale-105 bg-amber-200"
+                          : "opacity-70 hover:opacity-100"
                       }`}
                     >
                       <Image
