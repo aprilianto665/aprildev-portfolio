@@ -35,7 +35,7 @@ export default function Navigation() {
         <div className="flex items-center justify-between">
           <div className="text-xl sm:text-2xl font-extrabold text-black tracking-tight select-none">
             April{" "}
-            <span className="text-orange-600 underline decoration-wavy decoration-black decoration-2">
+            <span className="text-orange-600">
               Dev
             </span>
           </div>

@@ -8,7 +8,7 @@ export default function EducationSection() {
       <div className="text-center mb-12 space-y-2">
         <h2 className="text-3xl sm:text-4xl font-extrabold text-black">
           Education &{" "}
-          <span className="text-orange-600 underline decoration-wavy decoration-black decoration-3 sm:decoration-4">
+          <span className="text-orange-600">
             Training
           </span>
         </h2>

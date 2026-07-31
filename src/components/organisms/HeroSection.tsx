@@ -60,7 +60,7 @@ export default function HeroSection() {
               <span className="block text-black">
                 Muhammad
               </span>
-              <span className="block text-orange-600 underline decoration-wavy decoration-black decoration-3 sm:decoration-4">
+              <span className="block text-orange-600">
                 Aprilianto
               </span>
             </h1>
