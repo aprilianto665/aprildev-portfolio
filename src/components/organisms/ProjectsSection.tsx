@@ -37,12 +37,12 @@ export default function ProjectsSection() {
   }, [emblaApi]);
 
   return (
-    <div id="projects" className="max-w-6xl mx-auto px-8 py-16">
-      <div className="text-center mb-12">
-        <h2 className="text-4xl font-bold text-gray-900 mb-4">
-          My <span className="text-orange-500">Projects</span>
+    <div id="projects" className="max-w-6xl mx-auto px-4 sm:px-8 py-16 scroll-mt-20">
+      <div className="text-center mb-12 space-y-2">
+        <h2 className="text-3xl sm:text-4xl font-extrabold text-black">
+          My <span className="text-orange-600">Projects</span>
         </h2>
-        <p className="text-gray-600 text-lg max-w-2xl mx-auto">
+        <p className="text-gray-800 font-bold text-base sm:text-lg max-w-2xl mx-auto">
           Some of the projects I&apos;ve worked on
         </p>
       </div>
@@ -57,28 +57,28 @@ export default function ProjectsSection() {
                 className="flex-[0_0_100%] md:flex-[0_0_calc(50%-1rem)] min-w-0"
               >
                 <Card className="flex flex-col justify-between gap-4 h-full">
-                  <div className="w-full aspect-video flex-shrink-0 rounded-lg overflow-hidden relative">
+                  <div className="w-full aspect-video flex-shrink-0 rounded-xl overflow-hidden relative border-2 border-black bg-white p-2">
                     <Image
                       src={project.images[0]}
                       alt={project.title}
                       fill
-                      className="object-contain"
+                      className="object-contain rounded-lg"
                     />
                   </div>
                   <div className="flex flex-col justify-between flex-1">
-                    <h3 className="text-xl font-semibold text-gray-900 mb-3">
+                    <h3 className="text-xl font-extrabold text-black mb-3">
                       {project.title}
                     </h3>
                     <div>
                       {project.status === "completed" ? (
                         <button
                           onClick={() => handleViewProject(project)}
-                          className="text-orange-500 hover:text-orange-600 font-medium cursor-pointer"
+                          className="text-orange-600 hover:text-orange-700 font-extrabold cursor-pointer transition-colors"
                         >
                           View Project →
                         </button>
                       ) : (
-                        <span className="text-gray-400 font-medium">
+                        <span className="text-gray-400 font-extrabold">
                           In Progress
                         </span>
                       )}
@@ -93,14 +93,14 @@ export default function ProjectsSection() {
         {/* Navigation Buttons */}
         <button
           onClick={scrollPrev}
-          className="absolute left-0 top-1/2 -translate-y-1/2 -translate-x-4 bg-orange-500 hover:bg-orange-600 text-white rounded-full p-3 shadow-lg transition-all hover:scale-110 z-10 cursor-pointer"
+          className="absolute left-0 top-1/2 -translate-y-1/2 -translate-x-3 sm:-translate-x-6 w-11 h-11 flex items-center justify-center bg-[repeating-linear-gradient(-45deg,#f97316,#f97316_5px,#fb923c_5px,#fb923c_10px)] text-white border-2 border-black rounded-full outline outline-1 outline-black/35 outline-offset-[-3px] select-none hover:opacity-90 active:scale-95 z-20 cursor-pointer"
           aria-label="Previous slide"
         >
           <svg
             xmlns="http://www.w3.org/2000/svg"
             fill="none"
             viewBox="0 0 24 24"
-            strokeWidth={2}
+            strokeWidth={3}
             stroke="currentColor"
             className="w-6 h-6"
           >
@@ -110,14 +110,14 @@ export default function ProjectsSection() {
 
         <button
           onClick={scrollNext}
-          className="absolute right-0 top-1/2 -translate-y-1/2 translate-x-4 bg-orange-500 hover:bg-orange-600 text-white rounded-full p-3 shadow-lg transition-all hover:scale-110 z-10 cursor-pointer"
+          className="absolute right-0 top-1/2 -translate-y-1/2 translate-x-3 sm:translate-x-6 w-11 h-11 flex items-center justify-center bg-[repeating-linear-gradient(-45deg,#f97316,#f97316_5px,#fb923c_5px,#fb923c_10px)] text-white border-2 border-black rounded-full outline outline-1 outline-black/35 outline-offset-[-3px] select-none hover:opacity-90 active:scale-95 z-20 cursor-pointer"
           aria-label="Next slide"
         >
           <svg
             xmlns="http://www.w3.org/2000/svg"
             fill="none"
             viewBox="0 0 24 24"
-            strokeWidth={2}
+            strokeWidth={3}
             stroke="currentColor"
             className="w-6 h-6"
           >
