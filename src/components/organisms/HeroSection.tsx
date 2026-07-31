@@ -7,11 +7,9 @@ export default function HeroSection() {
   return (
     <div
       id="about"
-      className="relative mt-24 sm:mt-28 lg:mt-32 scroll-mt-28 mx-4 sm:mx-8 lg:mx-12 bg-white"
+      className="relative mt-12 sm:mt-16 lg:mt-20 scroll-mt-20 mx-4 sm:mx-8 lg:mx-12 bg-white"
     >
-      {/* Tape decor elements to look like a pinned picture/drawing */}
-      <div className="absolute -top-3 left-10 sm:left-16 w-16 sm:w-20 h-7 bg-amber-200/90 border-2 border-black rotate-[-6deg] shadow-sm pointer-events-none z-20"></div>
-      <div className="absolute -top-3 right-10 sm:right-16 w-16 sm:w-20 h-7 bg-amber-200/90 border-2 border-black rotate-[5deg] shadow-sm pointer-events-none z-20"></div>
+
 
       <div className="flex flex-col lg:flex-row items-stretch overflow-hidden">
         {/* Avatar Image Section - Full to top, left, bottom borders */}
@@ -28,7 +26,10 @@ export default function HeroSection() {
         {/* Content Section */}
         <div className="flex-1 text-center lg:text-left p-6 sm:p-8 lg:p-12 flex flex-col justify-center space-y-4 sm:space-y-6">
           <div className="space-y-3">
-            <Badge variant="primary">Software Engineer</Badge>
+            <div className="flex flex-wrap justify-center lg:justify-start gap-2">
+              <Badge variant="primary">Software Engineer</Badge>
+              <Badge variant="primary">AI Engineer</Badge>
+            </div>
             <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-extrabold leading-tight tracking-tight">
               <span className="block text-black">
                 Muhammad
