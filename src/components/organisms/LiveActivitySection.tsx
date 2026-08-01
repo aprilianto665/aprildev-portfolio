@@ -3,6 +3,7 @@
 import { useEffect, useState, useCallback } from 'react';
 import useEmblaCarousel from 'embla-carousel-react';
 import Card from '../molecules/Card';
+import Badge from '../atoms/Badge';
 
 interface Mission {
   id: string;
@@ -116,18 +117,18 @@ export default function LiveActivitySection() {
                       <h3 className="text-base sm:text-lg font-extrabold text-black leading-snug line-clamp-2">
                         {mission.title}
                       </h3>
-                      <span className="px-2 py-0.5 text-xs font-extrabold bg-amber-200 border border-black rounded-full shrink-0 select-none">
+                      <Badge variant="primary" className="!px-2.5 !py-0.5 !text-xs shrink-0">
                         {mission.target_days
                           ? `Day ${mission.current_day}/${mission.target_days}`
                           : `Day ${mission.current_day}`}
-                      </span>
+                      </Badge>
                     </div>
 
                     <div className="flex justify-between items-center pt-2 border-t border-black/15 text-xs sm:text-sm font-extrabold">
-                      <span className="text-gray-700">Time Spent</span>
-                      <span className="text-orange-600 bg-orange-100/80 px-2 py-0.5 border border-black/40 rounded-md">
+                      <span className="text-gray-700">Progress</span>
+                      <Badge variant="secondary" className="!px-2.5 !py-0.5 !text-xs shrink-0">
                         {mission.minutes_done} / {mission.target_minutes} min
-                      </span>
+                      </Badge>
                     </div>
                   </Card>
                 </div>
