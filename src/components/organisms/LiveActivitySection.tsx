@@ -112,20 +112,19 @@ export default function LiveActivitySection() {
                   key={mission.id}
                   className="flex-[0_0_100%] sm:flex-[0_0_calc(50%-0.75rem)] lg:flex-[0_0_calc(33.333%-1rem)] min-w-0"
                 >
-                  <Card className="flex flex-col justify-between gap-3 h-full p-4 sm:p-5">
-                    <div className="flex items-start justify-between gap-2">
+                  <Card className="flex flex-col justify-between gap-4 h-full p-4 sm:p-5">
+                    <div>
                       <h3 className="text-base sm:text-lg font-extrabold text-black leading-snug line-clamp-2">
                         {mission.title}
                       </h3>
+                    </div>
+
+                    <div className="flex items-center justify-start gap-2 pt-2 border-t border-black/15 flex-wrap">
                       <Badge variant="primary" className="!px-2.5 !py-0.5 !text-xs shrink-0">
                         {mission.target_days
                           ? `Day ${mission.current_day}/${mission.target_days}`
                           : `Day ${mission.current_day}`}
                       </Badge>
-                    </div>
-
-                    <div className="flex justify-between items-center pt-2 border-t border-black/15 text-xs sm:text-sm font-extrabold">
-                      <span className="text-gray-700">Progress</span>
                       <Badge variant="secondary" className="!px-2.5 !py-0.5 !text-xs shrink-0">
                         {mission.minutes_done} / {mission.target_minutes} min
                       </Badge>
