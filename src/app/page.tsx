@@ -1,6 +1,7 @@
 import Layout from '../components/templates/Layout';
 import Navigation from '../components/organisms/Navigation';
 import HeroSection from '../components/organisms/HeroSection';
+import LiveActivitySection from '../components/organisms/LiveActivitySection';
 import EducationSection from '../components/organisms/EducationSection';
 import SkillsSection from '../components/organisms/SkillsSection';
 import ProjectsSection from '../components/organisms/ProjectsSection';
@@ -12,6 +13,7 @@ export default function Home() {
     <Layout>
       <Navigation />
       <HeroSection />
+      <LiveActivitySection />
       <EducationSection />
       <SkillsSection />
       <ProjectsSection />
