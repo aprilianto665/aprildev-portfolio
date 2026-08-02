@@ -66,23 +66,10 @@ export default function HeroSection() {
             </h1>
           </div>
           <p className="text-base sm:text-lg leading-relaxed text-gray-800 font-bold">
-            <span className="bg-amber-200 px-1 border border-black rounded-sm">
-              Software Engineer
-            </span>{" "}
-            with a{" "}
-            <span className="bg-orange-200 px-1 border border-black rounded-sm">
-              language-agnostic mindset
-            </span>
-            , transitioning from document control to web development. I focus
-            on building{" "}
-            <span className="bg-amber-200 px-1 border border-black rounded-sm">
-              scalable, maintainable systems
-            </span>{" "}
-            with{" "}
-            <span className="bg-orange-200 px-1 border border-black rounded-sm">
-              clean architecture
-            </span>
-            , selecting technologies based on use case rather than preference.
+            Software Engineer with a language-agnostic mindset, transitioning
+            from document control to web development. I focus on building
+            scalable, maintainable systems with clean architecture, selecting
+            technologies based on use case rather than preference.
           </p>
           <div className="flex flex-wrap justify-center lg:justify-start gap-2 sm:gap-3 pt-2">
             {techStack.map((tech) => (
