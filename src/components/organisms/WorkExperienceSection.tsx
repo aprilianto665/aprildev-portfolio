@@ -28,7 +28,7 @@ export default function WorkExperienceSection() {
       company: 'PT Wiranusantara Bumi',
       location: 'Bandung, Indonesia',
       role: 'Project Administrator',
-      period: 'Jan, 2021 - Jan, 2024',
+      period: 'Jan, 2021 - Jan, 2022',
       gradient: 'bg-[repeating-linear-gradient(-45deg,#fef3c7,#fef3c7_5px,#fde68a_5px,#fde68a_10px)]',
     },
   ];
