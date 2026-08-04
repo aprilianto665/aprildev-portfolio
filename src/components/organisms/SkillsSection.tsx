@@ -5,12 +5,12 @@ import { languages, frontend, backend, devops, tools } from "../../data/skills";
 
 export default function SkillsSection() {
   return (
-    <div id="skills" className="max-w-6xl mx-auto px-8 py-16">
-      <div className="text-center mb-12">
-        <h2 className="text-4xl font-bold text-gray-900 mb-4">
-          My <span className="text-orange-500">Skills</span>
+    <div id="skills" className="max-w-6xl mx-auto px-4 sm:px-8 py-16 scroll-mt-20">
+      <div className="text-center mb-12 space-y-2">
+        <h2 className="text-3xl sm:text-4xl font-extrabold text-black">
+          My <span className="text-orange-600">Skills</span>
         </h2>
-        <p className="text-gray-600 text-lg max-w-2xl mx-auto">
+        <p className="text-gray-800 font-bold text-base sm:text-lg max-w-2xl mx-auto">
           Technologies and tools I work with to bring ideas to life
         </p>
       </div>
