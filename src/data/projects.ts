@@ -116,4 +116,22 @@ export const projects: Project[] = [
     images: ["/e-requisition1.png", "/e-requisition2.png", "/e-requisition3.png"],
     status: "completed",
   },
+  {
+    title: "run.mem (Habit & Commitment Tracking Platform)",
+    slug: "run-mem",
+    tech: [
+      "Next.js",
+      "React",
+      "TypeScript",
+      "Tailwind CSS",
+      "Prisma ORM",
+      "PostgreSQL",
+    ],
+    fullDescription:
+      "A productivity platform designed to help users achieve long-term objectives through habit tracking, mission-based routines, and progress visualization. Inspired by Atomic Habits principles, the application combines behavioral design concepts with a scalable web architecture to create a structured and engaging self-improvement experience.",
+    github: "https://github.com/aprilianto665/mem.exe-new",
+    demo: "https://run-mem.vercel.app/",
+    images: ["/run-mem.png"],
+    status: "completed",
+  },
 ];
