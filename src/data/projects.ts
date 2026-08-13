@@ -113,7 +113,7 @@ export const projects: Project[] = [
 
     github: "",
     demo: "",
-    images: ["/e-requisition1.png"],
+    images: ["/e-requisition1.png", "/e-requisition2.png", "/e-requisition3.png"],
     status: "completed",
   },
 ];
