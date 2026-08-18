@@ -95,9 +95,30 @@ export const projects: Project[] = [
     status: "completed",
   },
   {
+    title: "Donpro.id (Company Profile Website)",
+    slug: "donpro-id",
+    tech: [
+      "PHP",
+      "Laravel",
+      "Blade",
+      "Tailwind CSS",
+      "Alpine.js",
+      "MySQL",
+      "REST API",
+      "Docker",
+      "Nginx",
+      "Linux",
+    ],
+    fullDescription:
+      "A company profile website and content management platform developed for a maritime industry consultancy firm to showcase services, projects, and corporate information. The platform includes a custom content management dashboard, enabling administrators to manage website content efficiently while maintaining performance, SEO optimization, and scalability for future business growth.",
+    github: "",
+    demo: "https://donpro.id",
+    images: ["/donpro1.png", "/donpro2.png", "/donpro3.png"],
+    status: "completed",
+  },
+  {
     title: "PT Antang Gunung Meratus E-Requisition Form",
     slug: "pt-agm-e-requisition-form",
-
     tech: [
       "Next.js",
       "React",
@@ -110,7 +131,6 @@ export const projects: Project[] = [
     ],
     fullDescription:
       "A digital web-based system replacing manual Excel-based Requisition Form processes for PT AGM's Supply Chain department. Features auto-suggest functionality for item descriptions, stock codes, part numbers, and units of measure (UoM) to ensure data consistency. Includes automatic validation for required fields, real-time calculation of subtotals, 11% VAT, currency conversion to IDR, and PDF export with proper signature layouts. Implements smart logic to display additional Site Manager/Chief signature fields when subtotals exceed certain thresholds.",
-
     github: "",
     demo: "",
     images: ["/e-requisition1.png", "/e-requisition2.png", "/e-requisition3.png"],
