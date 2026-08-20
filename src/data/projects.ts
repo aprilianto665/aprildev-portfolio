@@ -36,34 +36,6 @@ export const projects: Project[] = [
     status: "completed",
   },
   {
-    title: "Group Chat App",
-    slug: "group-chat-app",
-
-    tech: [
-      "Next.js",
-      "React",
-      "TypeScript",
-      "Tailwind CSS",
-      "Zustand",
-      "Prisma",
-      "PostgreSQL",
-      "Pusher",
-      "NextAuth.js",
-      "Azure Blob Storage",
-    ],
-    fullDescription:
-      "A real-time collaborative workspace that combines instant messaging with collaborative note-taking. Users can create multiple spaces, chat in real-time, and work together on shared notes with a block-based editor. Built with serverless architecture for scalability and performance.",
-
-    github: "https://github.com/aprilianto665/group-chat-app-submission",
-    demo: "https://group-chat-app-submission.vercel.app",
-    images: [
-      "/group-chat-app-1.png",
-      "/group-chat-app-2.png",
-      "/group-chat-app-3.png",
-    ],
-    status: "completed",
-  },
-  {
     title: "Predictive Lead Scoring Portal for Banking Sales",
     slug: "predictive-lead-scoring-portal",
 
