@@ -154,4 +154,23 @@ export const projects: Project[] = [
     images: ["/run-mem.png"],
     status: "completed",
   },
+  {
+    title: "KanjiGoto (Marugoto Curriculum Kanji Practice App)",
+    slug: "kanjigoto",
+    tech: [
+      "React",
+      "TypeScript",
+      "Vite",
+      "Tailwind CSS"
+    ],
+    fullDescription:
+      "A minimalist language learning web application designed specifically for practicing and memorizing Japanese Kanji following the Marugoto curriculum. Featuring dynamic randomized flashcards and a rapid-fire manual input drill system, the application utilizes a fast, zero-latency pure frontend architecture to create an engaging and frictionless active recall experience.",
+    github: "https://github.com/aprilianto665/kanjigoto-app",
+    demo: "https://kanjigoto.vercel.app/",
+    images: [
+      "/kanjigoto1.png",
+      "/kanjigoto2.png",
+    ],
+    status: "completed",
+  },
 ];
